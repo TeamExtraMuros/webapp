@@ -1,0 +1,106 @@
+body{
+  background-color: #C3D2E5;
+}
+#nav_mobile{
+  display: none;
+}
+/*Titre du site*/
+h1{
+  background-color: #2e2e2e;
+  color: white;
+  font-size: 2.5em !important;
+  font-weight: 600 !important;
+  position: absolute;
+  left: 50%; top: 5%;
+  text-align: center;
+  padding: 1% 5%;
+  transform:translate(-50%, -50%);
+}
+/*Sousitre du site mobile*/
+#st_mobile{
+  display: none;
+}
+a{
+  color: grey !important;
+}
+a:hover{
+  color: black !important;
+}
+/*Grille css pour le menu desktop*/
+.grid-container {
+  display: grid;
+  margin-left: 10%;
+  margin-right: 10%;
+  grid-template-columns: repeat(9, 1fr);
+  margin-top: 150px;
+}
+/*Element dans la grille*/
+.grid-item {
+  text-align: center;
+  font-size: 2.5em;
+}
+.grid-item  p{
+  font-size: 0.5em;
+  padding: 0;
+}
+/*fleche entre onglet du menu*/
+.next{
+  font-size: 4em;
+  display: inline-block !important;
+  width: 100% !important;
+  font-weight: lighter !important;
+  color: grey;
+}
+.card{
+  margin-left: 10% !important;
+  margin-right: 10% !important;
+}
+.card-content p{
+  font-size: 1.5em;
+}
+@media all and (max-device-width: 640px)
+{
+    .card{
+      margin-top: 25% !important;
+    }
+    #nav_desktop{
+      display: none;
+    }
+    #nav_mobile{
+      display: grid;
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      background-color: white;
+      padding-top: 3%;
+      padding-right: 5%;
+      padding-left: 5%;
+      box-shadow: 0px -2px 20px -2px rgba(0,0,0,0.75);
+    }
+    .next{
+      color: #C3D2E5;
+    }
+    h1{
+      font-size: 3em !important;
+      padding: 1% 1%;
+      padding-right: 2%;
+    }
+    h2{
+      background-color: #E6514F;
+      color: white;
+      font-size: 2em !important;
+      font-weight: 600 !important;
+      position: absolute;
+      left: 43.3%; top: 8.4%;
+      padding: 1% 0.5%;
+      padding-right: 2%;
+      transform:translate(-50%, -50%);
+    }
+    #st_mobile {
+      display: block;
+    }
+    .grid-container {
+      display: grid;
+      margin: 0;
+      grid-template-columns: repeat(9, 1fr);
+    }
+}
