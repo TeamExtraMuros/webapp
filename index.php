@@ -1,5 +1,7 @@
 <?php 
 // this was only created in order to deploy a static app on Heroku 
 // We have to simulate that it's a PHP-like application.
-include_once("html/home.html"); 
+
+//The homepage is the step 1 "html/etape1.html"
+include_once("html/etape1.html"); 
 ?>
