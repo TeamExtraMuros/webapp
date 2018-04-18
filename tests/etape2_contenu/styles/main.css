@@ -2,8 +2,16 @@
 .info-annexe {
   font-size: 10px;
 }
+.icone-transport {
+  height: 24px;
+  width: 24px;
+}
+
 /*Pour mobile*/
 @media all and (max-device-width: 650px){
+    #table-transport{
+      font-size: 2em;
+    }
     .nav_desk{
       display: none;
     }

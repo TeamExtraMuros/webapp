@@ -9,6 +9,7 @@
 card{
   background-color: blue;
 }
+
 /*Pour mobile*/
 @media all and (max-device-width: 650px){
     .nav_desk{
