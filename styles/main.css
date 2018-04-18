@@ -28,13 +28,9 @@ h1 {
 a {
     color: grey !important;
 }
-<<<<<<< HEAD
-=======
 a:hover {
     color: black !important;
 }
-
->>>>>>> b2bff07bbded85f0ea785cce25a9311c8b687c98
 /*Grille css pour le menu desktop*/
 
 .grid-container {
@@ -55,9 +51,7 @@ a:hover {
     font-size: 0.5em;
     padding: 0;
 }
-
 /*fleche entre onglet du menu*/
-<<<<<<< HEAD
 .next{
   font-size: 4em;
   display: inline-block !important;
@@ -68,48 +62,9 @@ a:hover {
 .card{
   margin-left: 10% !important;
   margin-right: 10% !important;
-}
-.card-content p{
-  font-size: 1.5em;
-}
-
-@media all and (max-device-width: 640px)
-{
-    a.o1:hover, a.o1:focus{
-      color: #C3D2E5 !important;
-    }
-    a.o2:hover, a.o2:focus{
-      color: #80CBAD !important;
-    }
-    a.o3:hover, a.o3:focus{
-      color: #F4CA07 !important;
-    }
-    a.o4:hover, a.o4:focus{
-      color: #E6514F !important;
-    }
-    a.o5:hover, a.o5:focus{
-      color: #C3D2E5 !important;
-    }
-    .card{
-      margin-top: 25% !important;
-=======
-
-.next {
-    font-size: 4em;
-    display: inline-block !important;
-    width: 100% !important;
-    font-weight: lighter !important;
-    color: grey;
-}
-
-/* Contenu */
-
-.card {
-    margin-left: 10% !important;
-    margin-right: 10% !important;
-    background-color: white;
-    overflow: hidden;
-    padding: 2% 2% 2% 0%;
+  background-color: white;
+  overflow: hidden;
+  padding: 2% 2% 2% 0%;
 }
 .card-content p {
     font-size: 1.5em;
@@ -147,20 +102,31 @@ a:hover {
     background-color: white
 }
 
-/* Support device mobile */
-
-@media all and (max-device-width: 640px) {
+@media all and (max-device-width: 640px)
+{
     .hideOnMobile {
         display: none;
     }
-    
     .card-content {
         border: none;
     }
-    
     .card {
         margin-top: 25% !important;
->>>>>>> b2bff07bbded85f0ea785cce25a9311c8b687c98
+    }
+    a.o1:hover, a.o1:focus{
+      color: #C3D2E5 !important;
+    }
+    a.o2:hover, a.o2:focus{
+      color: #80CBAD !important;
+    }
+    a.o3:hover, a.o3:focus{
+      color: #F4CA07 !important;
+    }
+    a.o4:hover, a.o4:focus{
+      color: #E6514F !important;
+    }
+    a.o5:hover, a.o5:focus{
+      color: #C3D2E5 !important;
     }
     #nav_desktop {
         display: none;
@@ -185,7 +151,6 @@ a:hover {
         padding: 1% 1%;
         padding-right: 2%;
     }
-<<<<<<< HEAD
     h2{
       background-color: #E6514F;
       color: white;
@@ -196,19 +161,6 @@ a:hover {
       padding: 1% 0.5%;
       padding-right: 2%;
       transform:translate(-50%, -50%);
-=======
-    h2 {
-        background-color: #E6514F;
-        color: white;
-        font-size: 2em !important;
-        font-weight: 600 !important;
-        position: absolute;
-        left: 43.3%;
-        top: 8.4%;
-        padding: 1% 0.5%;
-        padding-right: 2%;
-        transform: translate(-50%, -50%);
->>>>>>> b2bff07bbded85f0ea785cce25a9311c8b687c98
     }
     #st_mobile {
         display: block;
