@@ -21,7 +21,16 @@ h1 {
     padding: 1% 4%;
     transform: translate(-50%, -50%);
 }
-
+ul li{
+  list-style-type: disc !important;
+}
+li{
+  font-size: 1.5em;
+  margin-left: 3%;
+}
+ul > h4{
+  margin-top: 5%;
+}
 /*Sousitre du site mobile*/
 
 #st_mobile {
@@ -103,9 +112,6 @@ a:hover {
     border: 3px solid #2e2e2e;
     background-color: white
 }
-ul{
-  list-style-type: circle;
-}
 
 @media all and (max-device-width: 640px)
 {
@@ -119,8 +125,8 @@ ul{
         border: none;
     }
     .card {
-        margin-top: 25% !important;
-        margin-bottom: 25% !important;
+        margin-top: 30% !important;
+        margin-bottom: 30% !important;
     }
     a.o1:hover, a.o1:focus{
       color: #C3D2E5 !important;
@@ -157,21 +163,22 @@ ul{
     }
     h1 {
         background-color: #2e2e2e;
-        font-size: 3em !important;
-        padding: 2% 0%;
-        padding-right: 8%;
-        padding-left: 2%;
+        font-size: 3.5em !important;
+        margin-left: auto;
+        margin-right: auto;
+        width: 600px;
+        text-align: left;
     }
     h2{
       background-color: #E6514F;
       color: white;
-      font-size: 2em !important;
+      font-size: 3em !important;
       font-weight: 600 !important;
       position: absolute;
-      left: 38.4%; top: 9.2%;
+      left: 37%; top: 9.3%;
       padding: 1% 0%;
       padding-right: 4%;
-      padding-left: 2%;
+      padding-left: 4%;
       transform:translate(-50%, -50%);
     }
     #st_mobile {
