@@ -20,9 +20,9 @@
 @media all and (min-device-width: 650px){
     .nav_desk{
         display: block;
+        height: 400px;
       }
       .nav_mobile{
         display: none;
       }   
-    } 
-}
+} 
