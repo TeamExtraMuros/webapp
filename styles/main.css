@@ -23,9 +23,6 @@ h1{
 a{
   color: grey !important;
 }
-a:hover{
-  color: black !important;
-}
 /*Grille css pour le menu desktop*/
 .grid-container {
   display: grid;
@@ -58,8 +55,24 @@ a:hover{
 .card-content p{
   font-size: 1.5em;
 }
+
 @media all and (max-device-width: 640px)
 {
+    a.o1:hover, a.o1:focus{
+      color: #C3D2E5 !important;
+    }
+    a.o2:hover, a.o2:focus{
+      color: #80CBAD !important;
+    }
+    a.o3:hover, a.o3:focus{
+      color: #F4CA07 !important;
+    }
+    a.o4:hover, a.o4:focus{
+      color: #E6514F !important;
+    }
+    a.o5:hover, a.o5:focus{
+      color: #C3D2E5 !important;
+    }
     .card{
       margin-top: 25% !important;
     }
@@ -90,7 +103,7 @@ a:hover{
       font-size: 2em !important;
       font-weight: 600 !important;
       position: absolute;
-      left: 43.3%; top: 8.4%;
+      left: 40.5%; top: 8.4%;
       padding: 1% 0.5%;
       padding-right: 2%;
       transform:translate(-50%, -50%);
