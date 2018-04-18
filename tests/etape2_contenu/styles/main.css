@@ -1,0 +1,21 @@
+
+.info-annexe {
+  font-size: 10px;
+}
+/*Pour mobile*/
+@media all and (max-device-width: 650px){
+    .nav_desk{
+      display: none;
+    }
+    .nav_mobile{
+      display: block;
+    }
+}
+@media all and (min-device-width: 650px){
+    .nav_desk{
+        display: block;
+      }
+      .nav_mobile{
+        display: none;
+      }    
+}
