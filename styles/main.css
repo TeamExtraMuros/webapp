@@ -9,6 +9,9 @@ body {
 .background1{
   background-color: #C3D2E5;
 }
+.background2{
+  background-color: #80CBAD;
+}
 #nav_mobile {
     display: none;
 }
@@ -191,23 +194,33 @@ iframe {
         margin-bottom: 30% !important;
     }
     a.o1:hover,
-    a.o1:focus {
+    a.o1:focus,
+    a.o1:active,
+    .menu1 {
         color: #C3D2E5 !important;
     }
     a.o2:hover,
-    a.o2:focus {
+    a.o2:focus,
+    a.o2:active,
+    .menu2 {
         color: #80CBAD !important;
     }
     a.o3:hover,
-    a.o3:focus {
+    a.o3:focus,
+    a.o3:active,
+    .menu3 {
         color: #F4CA07 !important;
     }
     a.o4:hover,
-    a.o4:focus {
+    a.o4:focus,
+    a.o4:active,
+    .menu4 {
         color: #E6514F !important;
     }
     a.o5:hover,
-    a.o5:focus {
+    a.o5:focus,
+    a.o5:active,
+    .menu5 {
         color: #C3D2E5 !important;
     }
     #nav_desktop {
@@ -252,21 +265,25 @@ iframe {
         width: 600px;
         text-align: left;
     }
-    h2 {
-        background-color: #E6514F;
+    #st_mobile {
         color: white;
         font-size: 3em !important;
         font-weight: 600 !important;
         position: absolute;
-        left: 37%;
         top: 9.3%;
         padding: 1% 0%;
         padding-right: 4%;
         padding-left: 4%;
         transform: translate(-50%, -50%);
-    }
-    #st_mobile {
         display: block;
+    }
+    .st1 {
+        background-color: #E6514F;
+        left: 37%;
+    }
+    .st2 {
+        background-color: #F4CA07;
+        left: 44.7%;
     }
     /* etape 2 */
     #table-transport {
