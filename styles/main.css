@@ -4,13 +4,13 @@ body {
 #nav_mobile {
     display: none;
 }
-.hideOnDesktop{
-  display: none;
+.hideOnDesktop {
+    display: none;
+}
+i {
+    font-family: fontawesome !important;
 }
 
-i {
-  font-family: fontawesome !important;
-}
 /*Titre du site*/
 
 h1 {
@@ -25,16 +25,17 @@ h1 {
     padding: 1% 4%;
     transform: translate(-50%, -50%);
 }
-ul li{
-  list-style-type: disc !important;
+ul li {
+    list-style-type: disc !important;
 }
-li{
-  font-size: 1.5em;
-  margin-left: 3%;
+li {
+    font-size: 1.5em;
+    margin-left: 3%;
 }
-ul > h4{
-  margin-top: 5%;
+ul > h4 {
+    margin-top: 5%;
 }
+
 /*Sousitre du site mobile*/
 
 #st_mobile {
@@ -46,6 +47,7 @@ a {
 a:hover {
     color: black !important;
 }
+
 /*Grille css pour le menu desktop*/
 
 .grid-container {
@@ -66,37 +68,38 @@ a:hover {
     font-size: 0.5em;
     padding: 0;
 }
+
 /*fleche entre onglet du menu*/
-.next{
-  font-size: 4em;
-  display: inline-block !important;
-  width: 100% !important;
-  font-weight: lighter !important;
-  color: grey;
+
+.next {
+    font-size: 4em;
+    display: inline-block !important;
+    width: 100% !important;
+    font-weight: lighter !important;
+    color: grey;
 }
-.card{
-  margin-left: 10% !important;
-  margin-right: 10% !important;
-  background-color: white;
-  overflow: hidden;
-  padding: 2% 2% 2% 0%;
+.card {
+    margin-left: 10% !important;
+    margin-right: 10% !important;
+    background-color: white;
+    overflow: hidden;
+    padding: 2% 2% 2% 0%;
 }
 .card-content p {
     font-size: 1.5em;
 }
 .card-title {
-
     float: left;
-    width: 5%;
     background-color: #2e2e2e;
     font-size: 1.5em;
+    width: 5%;
     padding-top: 20%;
 }
 
 /* Rotated title */
 
 .card-title p {
-        /* Safari */
+    /* Safari */
     -webkit-transform: rotate(-90deg);
     /* Firefox */
     -moz-transform: rotate(-90deg);
@@ -110,23 +113,34 @@ a:hover {
     color: white;
     font-weight: 600;
 }
-.card-content {
+.toRight {
     float: right;
     width: 95%;
     border: 3px solid #2e2e2e;
     background-color: white
 }
 
-@media all and (max-device-width: 640px)
-{
+/* Etape 2 */
+
+.info-annexe {
+    font-size: 10px;
+}
+.icone-transport {
+    height: 24px;
+    width: 24px;
+}
+
+/* ------ */
+
+@media all and (max-device-width: 640px) {
     i {
-      font-family: fontawesome !important;
+        font-family: fontawesome !important;
     }
     .hideOnMobile {
         display: none;
     }
-    .hideOnDesktop{
-      display: inline;
+    .hideOnDesktop {
+        display: inline;
     }
     .card-content {
         border: none;
@@ -135,20 +149,25 @@ a:hover {
         margin-top: 30% !important;
         margin-bottom: 30% !important;
     }
-    a.o1:hover, a.o1:focus{
-      color: #C3D2E5 !important;
+    a.o1:hover,
+    a.o1:focus {
+        color: #C3D2E5 !important;
     }
-    a.o2:hover, a.o2:focus{
-      color: #80CBAD !important;
+    a.o2:hover,
+    a.o2:focus {
+        color: #80CBAD !important;
     }
-    a.o3:hover, a.o3:focus{
-      color: #F4CA07 !important;
+    a.o3:hover,
+    a.o3:focus {
+        color: #F4CA07 !important;
     }
-    a.o4:hover, a.o4:focus{
-      color: #E6514F !important;
+    a.o4:hover,
+    a.o4:focus {
+        color: #E6514F !important;
     }
-    a.o5:hover, a.o5:focus{
-      color: #C3D2E5 !important;
+    a.o5:hover,
+    a.o5:focus {
+        color: #C3D2E5 !important;
     }
     #nav_desktop {
         display: none;
@@ -185,19 +204,24 @@ a:hover {
         width: 600px;
         text-align: left;
     }
-    h2{
-      background-color: #E6514F;
-      color: white;
-      font-size: 3em !important;
-      font-weight: 600 !important;
-      position: absolute;
-      left: 37%; top: 9.3%;
-      padding: 1% 0%;
-      padding-right: 4%;
-      padding-left: 4%;
-      transform:translate(-50%, -50%);
+    h2 {
+        background-color: #E6514F;
+        color: white;
+        font-size: 3em !important;
+        font-weight: 600 !important;
+        position: absolute;
+        left: 37%;
+        top: 9.3%;
+        padding: 1% 0%;
+        padding-right: 4%;
+        padding-left: 4%;
+        transform: translate(-50%, -50%);
     }
     #st_mobile {
         display: block;
+    }
+    /* etape 2 */
+    #table-transport {
+        font-size: 2em;
     }
 }
