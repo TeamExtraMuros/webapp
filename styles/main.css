@@ -1,3 +1,7 @@
+@font-face {
+	font-family: "fontawesome";
+	src: url('../styles/fa-solid-900.ttf');
+}
 body {
     background-color: #C3D2E5;
 }
@@ -11,7 +15,7 @@ body {
 i {
   font-family: fontawesome !important;
 }
-/*Titre du site*/
+/*Ttre du site*/
 
 h1 {
     background-color: #2e2e2e;
@@ -73,6 +77,7 @@ a:hover {
   width: 100% !important;
   font-weight: lighter !important;
   color: grey;
+  text-align: center;
 }
 .card{
   margin-left: 10% !important;
@@ -119,9 +124,6 @@ a:hover {
 
 @media all and (max-device-width: 640px)
 {
-    i {
-      font-family: fontawesome !important;
-    }
     .hideOnMobile {
         display: none;
     }
@@ -172,10 +174,13 @@ a:hover {
     }
     .grid-item {
         text-align: center;
+        padding-top: 3%;
     }
     .grid-item p {
-        font-size: 0.8em;
+        font-size: 1em;
         padding: 0;
+        margin: 6% 0;
+        padding-bottom: 5%;
     }
     h1 {
         background-color: #2e2e2e;
