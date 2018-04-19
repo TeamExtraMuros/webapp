@@ -7,6 +7,10 @@ body {
 .hideOnDesktop{
   display: none;
 }
+
+i {
+  font-family: fontawesome !important;
+}
 /*Titre du site*/
 
 h1 {
@@ -115,6 +119,9 @@ a:hover {
 
 @media all and (max-device-width: 640px)
 {
+    i {
+      font-family: fontawesome !important;
+    }
     .hideOnMobile {
         display: none;
     }
@@ -158,8 +165,17 @@ a:hover {
         padding-left: 5%;
         box-shadow: 0px -2px 20px -2px rgba(0, 0, 0, 0.5);
     }
-    .next {
-        color: #C3D2E5;
+    .grid-container {
+        display: grid;
+        margin: 0;
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .grid-item {
+        text-align: center;
+    }
+    .grid-item p {
+        font-size: 0.8em;
+        padding: 0;
     }
     h1 {
         background-color: #2e2e2e;
@@ -183,10 +199,5 @@ a:hover {
     }
     #st_mobile {
         display: block;
-    }
-    .grid-container {
-        display: grid;
-        margin: 0;
-        grid-template-columns: repeat(9, 1fr);
     }
 }
