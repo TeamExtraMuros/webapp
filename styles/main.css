@@ -1,3 +1,7 @@
+@font-face {
+    font-family: "fontawesome";
+    src: url('../styles/fa-solid-900.ttf');
+}
 body {
     background-color: #C3D2E5;
 }
@@ -11,7 +15,7 @@ i {
     font-family: fontawesome !important;
 }
 
-/*Titre du site*/
+/*Ttre du site*/
 
 h1 {
     background-color: #2e2e2e;
@@ -77,16 +81,14 @@ a:hover {
     width: 100% !important;
     font-weight: lighter !important;
     color: grey;
+    text-align: center;
 }
-.card {
+.main-card {
     margin-left: 10% !important;
     margin-right: 10% !important;
     background-color: white;
     overflow: hidden;
     padding: 2% 2% 2% 0%;
-}
-.card-content p {
-    font-size: 1.5em;
 }
 .card-title {
     float: left;
@@ -119,6 +121,11 @@ a:hover {
     border: 3px solid #2e2e2e;
     background-color: white
 }
+.card-content-p {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 15px 5px 0px 5px;
+}
 
 /* Etape 2 */
 
@@ -128,6 +135,9 @@ a:hover {
 .icone-transport {
     height: 24px;
     width: 24px;
+}
+iframe {
+    margin-top: 15px;
 }
 
 /* ------ */
@@ -145,7 +155,7 @@ a:hover {
     .card-content {
         border: none;
     }
-    .card {
+    .main-card {
         margin-top: 30% !important;
         margin-bottom: 30% !important;
     }
@@ -191,10 +201,13 @@ a:hover {
     }
     .grid-item {
         text-align: center;
+        padding-top: 3%;
     }
     .grid-item p {
-        font-size: 0.8em;
+        font-size: 1em;
         padding: 0;
+        margin: 6% 0;
+        padding-bottom: 5%;
     }
     h1 {
         background-color: #2e2e2e;
@@ -222,6 +235,9 @@ a:hover {
     }
     /* etape 2 */
     #table-transport {
-        font-size: 2em;
+        font-size: 1em;
+    }
+    .waves-effect {
+        position: static;
     }
 }
