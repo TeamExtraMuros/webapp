@@ -3,5 +3,5 @@
 // We have to simulate that it's a PHP-like application.
 
 //The homepage is the step 1 "html/etape1.html"
-include_once("html/etape1.html"); 
+header('Location: html/etape1.html'); 
 ?>
