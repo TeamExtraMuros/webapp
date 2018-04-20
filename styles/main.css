@@ -12,6 +12,12 @@ body {
 .background2{
   background-color: #80CBAD;
 }
+.background3{
+  background-color: #F4CA07;
+}
+.background4{
+  background-color: #E6514F;
+}
 #nav_mobile {
     display: none;
 }
@@ -61,7 +67,7 @@ ul > h4 {
     display: none;
 }
 a {
-    color: grey !important;
+    color: #585858 !important;
 }
 a p{
   font-weight: bold;
@@ -108,7 +114,7 @@ a:hover{
     display: inline-block !important;
     width: 100% !important;
     font-weight: lighter !important;
-    color: grey;
+    color: #585858;
     text-align: center;
 }
 .main-card {
@@ -284,6 +290,18 @@ iframe {
     .st2 {
         background-color: #F4CA07;
         left: 44.7%;
+    }
+    .st3 {
+        background-color: #80CBAD;
+        left: 26.5%;
+    }
+    .st4 {
+        background-color: #C3D2E5;
+        left: 38%;
+    }
+    .st5 {
+        background-color: #E6514F;
+        left: 31%;
     }
     /* etape 2 */
     #table-transport {
