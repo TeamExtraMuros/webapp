@@ -1,0 +1,28 @@
+#img-UIT{
+  width: 100%;
+}
+#content-UIT{
+  height: auto;
+}
+
+/*Pour mobile*/
+@media all and (max-device-width: 650px){
+    #table-transport{
+      font-size: 2em;
+    }
+    .nav_desk{
+      display: none;
+    }
+    .nav_mobile{
+      display: block;
+    }
+}
+@media all and (min-device-width: 650px){
+    .nav_desk{
+        display: block;
+        height: 400px;
+      }
+      .nav_mobile{
+        display: none;
+      }   
+} 
