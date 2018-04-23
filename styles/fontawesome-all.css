@@ -1643,10 +1643,10 @@ readers do not read off random characters that represent icons */
   content: "\f183"; }
 
 .fa-map:before {
-  content: "\f279"; }
+  content: "\f3c5"; }
 
 .fa-map-marker:before {
-  content: "\f041"; }
+  content: "\f3c5"; }
 
 .fa-map-marker-alt:before {
   content: "\f3c5"; }

@@ -24,6 +24,16 @@ body {
 .hideOnDesktop {
     display: none;
 }
+.center{
+  text-align: center;
+}
+.line{
+  width: 400px;
+  height: 1px;
+  background: #2e2e2e;
+  margin: 6% auto;
+}
+
 i {
     font-family: fontawesome !important;
     font-weight: lighter !important;
@@ -51,13 +61,14 @@ h3 {
 }
 h4 {
     font-size: 2em;
+    font-weight: bold;
 }
 ul li {
     list-style-type: disc !important;
 }
-li {
-    font-size: 1em;
-    margin-left: 4%;
+li{
+  font-size: 1.3em;
+  margin-left: 4%;
 }
 ul > h4 {
     margin-top: 5%;
@@ -163,9 +174,22 @@ a:hover {
 }
 
 /* Etape 1*/
-
-.icon-etape1 {
-    width: 90%;
+.icon-etape1{
+  width: 90%;
+  padding: 2% 0;
+}
+.img-CG{
+  padding: 5% 0;
+}
+.vertical-align { /*Pour centre verticalement le texte et l'icone*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.txt-intro{
+  font-size: 2em !important;
+  padding: 3% 0 5% 0;
 }
 
 /* Etape 2 */
@@ -231,15 +255,18 @@ table {
     .card-content {
         border: none;
     }
-    .card-content p {
-        font-size: 1em;
+    .card-content p{
+        font-size: 3.5em;
     }
-    li {
-        font-size: 1em;
+    li{
+      font-size: 3.5em;
     }
     .main-card {
-        margin-top: 30% !important;
-        margin-bottom: 30% !important;
+      padding: 0 !important;
+      margin: 30% 0 30% 0 !important;
+    }
+    .card-content{
+      padding: 0 5% 0 0 !important;
     }
     a.o1:hover,
     a.o1:focus,
@@ -289,6 +316,10 @@ table {
     #nav_mobile p {
         font-weight: normal !important;
     }
+    #img-billetMobile{
+      width: 100%;
+    }
+    /* menu mobile */
     .grid-container {
         display: grid;
         margin: 0;
@@ -304,6 +335,7 @@ table {
         margin: 6% 0;
         padding-bottom: 5%;
     }
+    /**/
     h1 {
         background-color: #2e2e2e;
         font-size: 3.5em !important;
@@ -312,6 +344,10 @@ table {
         margin-right: auto;
         width: 600px;
         text-align: left;
+    }
+    h4{
+      font-size: 4em;
+      font-weight: bold;
     }
     #st_mobile {
         color: white;
@@ -344,6 +380,17 @@ table {
     .st5 {
         background-color: #E6514F;
         left: 31%;
+    }
+    /* Etape 1*/
+    .vertical-align{
+      flex-direction: column;
+    }
+    .txt-intro{
+      font-size: 3.5em !important;
+    }
+    .icon-etape1{
+      padding: 7% 0;
+      width: 100%;
     }
     /* etape 2 */
     #table-transport {
