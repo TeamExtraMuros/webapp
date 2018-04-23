@@ -24,6 +24,16 @@ body {
 .hideOnDesktop {
     display: none;
 }
+.center{
+  text-align: center;
+}
+.line{
+  width: 400px;
+  height: 1px;
+  background: #2e2e2e;
+  margin: 5% auto;
+}
+
 i {
   font-family: fontawesome !important;
   font-weight: lighter !important;
@@ -45,16 +55,17 @@ h1 {
 }
 h3{
   margin-top: 5%;
-  font-size: 2.5em;
+  font-size: 2.2em;
 }
 h4{
   font-size: 2em;
+  font-weight: bold;
 }
 ul li{
   list-style-type: disc !important;
 }
 li{
-  font-size: 1.5em;
+  font-size: 1.3em;
   margin-left: 4%;
 }
 ul > h4 {
@@ -105,7 +116,7 @@ a:hover{
     padding: 0;
 }
 .card-content p {
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 /*fleche entre onglet du menu*/
 
@@ -155,6 +166,10 @@ a:hover{
     border: 3px solid #2e2e2e;
     background-color: white
 }
+.card-content{
+  padding-left: 5% !important;
+  padding-right: 5% !important;
+}
 .card-content-p {
     font-size: 14px;
     font-weight: bold;
@@ -163,7 +178,18 @@ a:hover{
 /* Etape 1*/
 .icon-etape1{
   width: 90%;
+  padding: 2% 0;
 }
+.img-CG{
+  padding: 5% 0;
+}
+.vertical-align { /*Pour centre verticalement le texte et l'icone*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
 /* Etape 2 */
 
 .info-annexe {
@@ -193,10 +219,10 @@ iframe {
         border: none;
     }
     .card-content p{
-        font-size: 2em;
+        font-size: 2.5em;
     }
     li{
-      font-size: 2em;
+      font-size: 2.5em;
     }
     .main-card {
         margin-top: 30% !important;
@@ -250,6 +276,7 @@ iframe {
     #nav_mobile p{
       font-weight: normal !important;
     }
+    /* menu mobile */
     .grid-container {
         display: grid;
         margin: 0;
@@ -265,6 +292,7 @@ iframe {
         margin: 6% 0;
         padding-bottom: 5%;
     }
+    /**/
     h1 {
         background-color: #2e2e2e;
         font-size: 3.5em !important;
@@ -273,6 +301,9 @@ iframe {
         margin-right: auto;
         width: 600px;
         text-align: left;
+    }
+    h4{
+      font-size: 3.5em;
     }
     #st_mobile {
         color: white;
@@ -305,6 +336,10 @@ iframe {
     .st5 {
         background-color: #E6514F;
         left: 31%;
+    }
+    /* Etape 1*/
+    .vertical-align{
+      flex-direction: column;
     }
     /* etape 2 */
     #table-transport {
