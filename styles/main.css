@@ -160,7 +160,10 @@ a:hover{
     font-weight: bold;
     padding: 15px 5px 0px 5px;
 }
-
+/* Etape 1*/
+.icon-etape1{
+  width: 90%;
+}
 /* Etape 2 */
 
 .info-annexe {
