@@ -61,6 +61,7 @@ h3 {
 }
 h4 {
     font-size: 2em;
+    font-weight: bold;
 }
 ul li {
     list-style-type: disc !important;
@@ -252,8 +253,11 @@ table {
       font-size: 2.5em;
     }
     .main-card {
-        margin-top: 30% !important;
-        margin-bottom: 30% !important;
+      padding: 0 !important;
+      margin: 30% 0 30% 0 !important;
+    }
+    .card-content{
+      padding: 0 5% 0 0 !important;
     }
     a.o1:hover,
     a.o1:focus,
@@ -303,6 +307,9 @@ table {
     #nav_mobile p {
         font-weight: normal !important;
     }
+    #img-billetMobile{
+      width: 100%;
+    }
     /* menu mobile */
     .grid-container {
         display: grid;
@@ -331,6 +338,7 @@ table {
     }
     h4{
       font-size: 3.5em;
+      font-weight: bold;
     }
     #st_mobile {
         color: white;
@@ -370,6 +378,10 @@ table {
     }
     .txt-intro{
       font-size: 3em !important;
+    }
+    .icon-etape1{
+      padding: 7% 0;
+      width: 100%;
     }
     /* etape 2 */
     #table-transport {
