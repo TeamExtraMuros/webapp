@@ -1,5 +1,5 @@
 var CACHE_VERSION = 'extra-muros V1 ';
-var CACHE_FILES = [    
+var CACHE_FILES = [        
     './html/etape1.html',
     './html/etape2.html',
     './html/etape3.html',
@@ -39,7 +39,7 @@ self.addEventListener("fetch", function(event) {
     console.log('Fetch');
     event.respondWith(
         caches.match(event.request).then(function(cached) {
-            if (cached) {
+            if (cached) {                
                 console.log('Loaded from cache: ' + event.request.url);
                 return cached;
             } else {

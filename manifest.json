@@ -1,0 +1,107 @@
+{
+    "dir": "ltr",
+    "lang": "fr",
+    "name": "Votre séjour à l'UIT",
+    "scope": "/html/etape1.html",
+    "display": "fullscreen",
+    "start_url": "https://extra-muros.herokuapp.com/html/etape1.html",
+    "short_name": "sejour UIT",
+    "theme_color": "transparent",
+    "description": "",
+    "orientation": "any",
+    "background_color": "transparent",
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "/images/c9f3ee37-5cee-b05e-cd3b-53d4c48b6e3a.webPlatform.png",
+            "sizes": "48x48",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/98f580cc-2255-0376-e34b-dd08bb7424b7.webPlatform.png",
+            "sizes": "1240x600",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/a6fbe3b2-db63-f51b-5fc6-e1eb38e20111.webPlatform.png",
+            "sizes": "300x300",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/5d2afd28-d167-e411-ff40-c16d8d211a65.webPlatform.png",
+            "sizes": "150x150",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/8587837f-a527-60fe-9a74-904e0157b565.webPlatform.png",
+            "sizes": "88x88",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/8e560b3f-7341-3bca-0e5f-d42ed624804f.webPlatform.png",
+            "sizes": "24x24",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/605fbb61-e34a-9d60-f49c-1153c58462af.webPlatform.png",
+            "sizes": "50x50",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/c7debf2d-09b0-7e27-c7ce-fae51a7d104c.webPlatform.png",
+            "sizes": "620x300",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/f8e2ca5a-67db-5ca4-1085-251e39d017ee.webPlatform.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/b61710b8-188c-a06d-f8e8-e52a232e3590.webPlatform.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/fe963864-3bf9-051d-e334-eb31b3d0a78b.webPlatform.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/2d92e79d-383d-46c2-e470-a51d2b3be2f4.webPlatform.png",
+            "sizes": "72x72",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/75a0d7c1-4912-8b0d-3a23-7728337eef1d.webPlatform.png",
+            "sizes": "36x36",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/ios/ios-appicon-1024-1024.png",
+            "sizes": "1024x1024",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/ce4aa177-5063-0ac9-8fb7-67715c8edd26.webPlatform.png",
+            "sizes": "180x180",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/9a5a2b16-a03f-24ef-3598-b5286707621a.webPlatform.png",
+            "sizes": "152x152",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/0207d4af-21bc-2ca4-1855-b4e91e5fa66b.webPlatform.png",
+            "sizes": "120x120",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/30191bf3-7b26-5803-025f-858a1a8f4cd2.webPlatform.png",
+            "sizes": "76x76",
+            "type": "image/png"
+        }
+    ]
+}
