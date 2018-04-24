@@ -246,7 +246,7 @@ table {
     margin-right: 5px;
 }
 
-#offline-msg {
+.offline-msg {
         /* if the map cannot be displayed because of no Internet connexion. */
         text-align: center;
         vertical-align: middle;
@@ -254,7 +254,7 @@ table {
         border: 1px solid black;
 }   
 
-#offline-msg i {
+.offline-msg i {
     font-size: 2em;
     color: #f4ca07;
 }
@@ -472,7 +472,7 @@ table {
         font-size: 1em;
     }
     
-    #offline-msg i {
+    .offline-msg i {
         font-size: 8em;
         color: #f4ca07;
     }
