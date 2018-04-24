@@ -11,6 +11,11 @@ if ('serviceWorker' in navigator) {
 }
 
 $(function () {
+
+    $("a").click(function (event) {
+        event.preventDefault();
+        window.location = $(this).attr("href");
+    });
     
     // ======== STEP 2 ========
     $(".flags a").each(function (index) {
