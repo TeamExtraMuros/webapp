@@ -229,6 +229,16 @@ p a:hover {
 table {
     margin-top: 2%;
 }
+.flags a {
+    color: white !important;
+    margin-top: 10%;
+    font-weight: bold;
+    display: block;
+    text-align: left;
+}
+.flags i {
+    margin-right: 5px;
+}
 
 /* ------ */
 
@@ -389,4 +399,16 @@ table {
     .waves-effect {
         position: static;
     }
+    .flags a {
+        display: block;
+        text-align: center;
+        margin-top: 5%;
+    }
+    .flags a:last-child {
+        margin-bottom: 5%;
+    }
+    .flags p {
+        margin-top: 5% !important;
+    }
+    /* --------- */
 }
