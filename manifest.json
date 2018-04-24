@@ -2,7 +2,7 @@
     "dir": "ltr",
     "lang": "fr",
     "name": "Votre séjour à l'UIT",
-    "scope": "/html/etape1.html",
+    "scope": "/html",
     "display": "fullscreen",
     "start_url": "https://extra-muros.herokuapp.com/html/etape1.html",
     "short_name": "sejour UIT",
