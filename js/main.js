@@ -32,7 +32,7 @@ $(function () {
         idPage = idPage.substring(1);
         if($("#page_" + idPage).length == 0){
           idPage = 'magasin';
-          window.location = "#" + idPage;
+          window.location = "#" + idPage; // PROBLEME !!
         }
         switchPage(idPage);
     });
