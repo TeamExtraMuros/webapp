@@ -161,7 +161,7 @@ a:hover {
 .toRight {
     float: right;
     width: 95%;
-    border: 3px solid #2e2e2e;
+    border: 1.5px solid #2e2e2e;
     background-color: white
 }
 .card .card-content {
@@ -270,7 +270,6 @@ table {
 .col-no-padding-left {
     padding-left: 0% !important;
 }
-<<<<<<< HEAD
 
 /*Etape 4*/
 .btn-resto{
@@ -320,9 +319,9 @@ table {
 .dollar{
   color: #2e2e2e;
 }
-
-=======
->>>>>>> 411466bb4b2fc26cefe0a9694bc8760711f2ce5f
+.page .col{
+  padding-bottom: 5%;
+}
 @media all and (max-device-width: 640px) {
     i {
         font-family: fontawesome !important;
