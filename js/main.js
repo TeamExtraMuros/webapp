@@ -12,7 +12,7 @@ if ('serviceWorker' in navigator) {
 
 $(function () {
     
-    // ======== STEP 2 ========
+    // ======== STEP 2 LOGIC ========
     $(".flags a").each(function (index) {
         $(this).click(() => {
             var video = $(".player video").get(0);
@@ -21,8 +21,11 @@ $(function () {
             video.play();
         });
     });
+    // ========================
     
     
+    
+    // MAP OR MESSAGE DISPLAY ACCORDING TO ONLINE / OFFLINE mode
  
     if(!navigator.onLine){
         // the message that will be displayed in the box in case offline mode is activated.
@@ -63,9 +66,6 @@ $(function () {
         addMap(iframeToDisplay);
     });
     
-    
-    
-    // ========================
 });
 
 function addErrorMsg(msg) {
@@ -76,7 +76,7 @@ function addErrorMsg(msg) {
 }
     
 function addMap(iframe) {
-        // get the parent container of the iframe in order to add another element if no connection has been established. 
+        // get the parent container of the message displayed in order to display the iframe again if the connection is re-established.
         var container = $(".offline-msg").parent();
         $(".offline-msg").remove();
     
