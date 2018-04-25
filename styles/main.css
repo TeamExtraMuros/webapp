@@ -27,6 +27,10 @@ body {
 .center {
     text-align: center;
 }
+header,
+body {
+    color: #2e2e2e !important;
+}
 i {
     font-family: fontawesome !important;
     font-weight: lighter !important;
@@ -270,59 +274,103 @@ table {
 .col-no-padding-left {
     padding-left: 0% !important;
 }
-<<<<<<< HEAD
+
+/* ------ */
+
 
 /*Etape 4*/
-.btn-resto{
-  background-color: #F4CA07 !important;
-  color: #2e2e2e !important;
-  width: 100%;
+
+.btn-resto {
+    background-color: #F4CA07 !important;
+    color: #2e2e2e !important;
+    width: 100%;
 }
-.btn-resto:hover{
-  color: white !important;
+.btn-resto:hover {
+    color: white !important;
 }
-.btn-resto:focus{
-  color: white !important;
+.btn-resto:focus {
+    color: white !important;
 }
-.btn-service{
-  background-color: #C3D2E5 !important;
-  color: #2e2e2e !important;
-  width: 100%;
+.btn-service {
+    background-color: #C3D2E5 !important;
+    color: #2e2e2e !important;
+    width: 100%;
 }
-.btn-service:hover{
-  color: white !important;
+.btn-service:hover {
+    color: white !important;
 }
-.btn-service:focus{
-  color: white !important;
+.btn-service:focus {
+    color: white !important;
 }
-.btn-magasin{
-  background-color: #E6514F !important;
-  color: #2e2e2e !important;
-  width: 100%;
+.btn-magasin {
+    background-color: #E6514F !important;
+    color: #2e2e2e !important;
+    width: 100%;
 }
-.btn-magasin:hover{
-  color: white !important;
+.btn-magasin:hover {
+    color: white !important;
 }
-.btn-magasin:focus{
-  color: white !important;
+.btn-magasin:focus {
+    color: white !important;
 }
-.btn-loisirs{
-  background-color: #80CBAD !important;
-  color: #2e2e2e !important;
-  width: 100%;
+.btn-loisirs {
+    background-color: #80CBAD !important;
+    color: #2e2e2e !important;
+    width: 100%;
 }
-.btn-loisirs:hover{
-  color: white !important;
+.btn-loisirs:hover {
+    color: white !important;
 }
-.btn-loisirs:focus{
-  color: white !important;
+.btn-loisirs:focus {
+    color: white !important;
 }
-.dollar{
-  color: #2e2e2e;
+.dollar {
+    color: #2e2e2e;
 }
 
-=======
->>>>>>> 411466bb4b2fc26cefe0a9694bc8760711f2ce5f
+/* ------ */
+
+
+/* Etape 5 */
+
+.title-step5 {
+    margin: 0 auto;
+    background-color: #e6514f;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    width: 40%;
+    margin-bottom: 10%;
+    padding: 2% 5%;
+}
+.contact-sggc {
+    background-color: #e6514f;
+    padding: 5% 10%;
+    margin-left: 10%;
+}
+.contact-sggc p:not(.contact-subtitle) {
+    margin-bottom: 10% !important;
+}
+.contact-sggc p:not(.contact-subtitle):last-child {
+    margin-bottom: 0% !important;
+}
+.contact-sggc a {
+    text-decoration: underline;
+}
+.contact-sggc a:hover {
+    color: #ffffff !important;
+}
+.contact-subtitle {
+    font-weight: bold;
+}
+.questions {
+    margin: 6% 0% 1% 0% !important;
+    font-weight: bold;
+}
+
+/* ------ */
+
 @media all and (max-device-width: 640px) {
     i {
         font-family: fontawesome !important;
@@ -538,4 +586,17 @@ table {
         height: 600px;
         max-height: 600px;
     }
+    /* Etape 5 */
+    .title-step5 {
+        width: 100%;
+        margin-top: 5%;
+    }
+    p.contact-msg:last-child {
+        margin-bottom: 5% !important;
+    }
+    .contact-sggc {
+        margin-left: 0%;
+        margin-bottom: 5%;
+    }
+    /* ------ */
 }
