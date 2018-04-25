@@ -27,12 +27,6 @@ body {
 .center {
     text-align: center;
 }
-.line {
-    width: 400px;
-    height: 1px;
-    background: #2e2e2e;
-    margin: 6% auto;
-}
 i {
     font-family: fontawesome !important;
     font-weight: lighter !important;
@@ -210,7 +204,7 @@ a:hover {
     padding: 0;
     margin: 0;
 }
-/*iframe {
+#map-frame {
     margin-left: 5%;
     height: 80%;
     max-height: 250px;
@@ -246,6 +240,22 @@ table {
     margin-right: 5px;
 }
 
+.offline-msg {
+        /* if the map cannot be displayed because of no Internet connexion. */
+        text-align: center;
+        vertical-align: middle;
+        padding: 10%;
+        border: 1px solid black;
+}
+
+.offline-msg i {
+    font-size: 2em;
+    color: #f4ca07;
+}
+
+/* ------ */
+
+
 /* Etape 3 */
 .icon-etape3{
   width: 100%;
@@ -260,6 +270,7 @@ table {
   height: 250px;
   max-height: 250px;
 }
+
 @media all and (max-device-width: 640px) {
     i {
         font-family: fontawesome !important;
@@ -444,7 +455,7 @@ table {
     .flags p {
         margin-top: 5% !important;
     }
-    iframe {
+    #map-frame {
         margin: 5% 0%;
     }
     .player {
@@ -454,6 +465,12 @@ table {
     td .btn {
         font-size: 1em;
     }
+
+    .offline-msg i {
+        font-size: 8em;
+        color: #f4ca07;
+    }
+
     /* etape 3 */
     .icon-etape3{
       width: 30%;
