@@ -27,7 +27,16 @@ $(function () {
 
 
     // ======== STEP 4 LOGIC ========
-    menuHandler();
+    $(window).on("popstate", function (e) {
+        var idPage = location.hash;
+        idPage = idPage.substring(1);
+        if($("#page_" + idPage).length == 0){
+          idPage = 'magasin';
+          window.location = "#" + idPage; // PROBLEME !!
+        }
+        switchPage(idPage);
+    });
+    $(window).trigger('popstate');
     // ========================
 
 
@@ -107,17 +116,5 @@ function switchPage(pageId) {
     $("#page_" + pageId).show();
 }
 
-function menuHandler() {
-    $('#restaurant').click(() => {
-        var idPage = 'restaurant';
-    });
-    $(window).on("popstate", function (e) {
-        var idPage = location.hash;
-        idPage = idPage.substring(1);
-        window.location = "#" + idPage;
-        switchPage(idPage);
-    });
-    $(window).trigger('popstate');
-}
 
 // ========================
