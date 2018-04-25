@@ -27,12 +27,6 @@ body {
 .center {
     text-align: center;
 }
-.line {
-    width: 400px;
-    height: 1px;
-    background: #2e2e2e;
-    margin: 6% auto;
-}
 i {
     font-family: fontawesome !important;
     font-weight: lighter !important;
@@ -252,7 +246,7 @@ table {
         vertical-align: middle;
         padding: 10%;
         border: 1px solid black;
-}   
+}
 
 .offline-msg i {
     font-size: 2em;
@@ -471,7 +465,7 @@ table {
     td .btn {
         font-size: 1em;
     }
-    
+
     .offline-msg i {
         font-size: 8em;
         color: #f4ca07;
