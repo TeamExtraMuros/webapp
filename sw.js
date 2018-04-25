@@ -1,4 +1,4 @@
-var CACHE_VERSION = 'extra-muros V1 ';
+var CACHE_VERSION = 'extra-muros V2 ';
 var CACHE_FILES = [        
     'html/etape1.html',
     'html/etape2.html',
