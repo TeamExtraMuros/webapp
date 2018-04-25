@@ -271,6 +271,55 @@ table {
   max-height: 250px;
 }
 
+/*Etape 4*/
+.btn-resto{
+  background-color: #F4CA07 !important;
+  color: #2e2e2e !important;
+  width: 100%;
+}
+.btn-resto:hover{
+  color: white !important;
+}
+.btn-resto:focus{
+  color: white !important;
+}
+.btn-service{
+  background-color: #C3D2E5 !important;
+  color: #2e2e2e !important;
+  width: 100%;
+}
+.btn-service:hover{
+  color: white !important;
+}
+.btn-service:focus{
+  color: white !important;
+}
+.btn-magasin{
+  background-color: #E6514F !important;
+  color: #2e2e2e !important;
+  width: 100%;
+}
+.btn-magasin:hover{
+  color: white !important;
+}
+.btn-magasin:focus{
+  color: white !important;
+}
+.btn-loisirs{
+  background-color: #80CBAD !important;
+  color: #2e2e2e !important;
+  width: 100%;
+}
+.btn-loisirs:hover{
+  color: white !important;
+}
+.btn-loisirs:focus{
+  color: white !important;
+}
+.dollar{
+  color: #2e2e2e;
+}
+
 @media all and (max-device-width: 640px) {
     i {
         font-family: fontawesome !important;
