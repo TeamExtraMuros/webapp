@@ -29,9 +29,9 @@ function switchPage(pageId) {
 }
 
 function menuHandler() {
-$('#restaurant').click(() => {
-  var idPage = 'restaurant';
-});
+  $('#restaurant').click(() => {
+    var idPage = 'restaurant';
+  });
   $(window).on("popstate", function(e) {
       var idPage = location.hash;
       idPage = idPage.substring(1);
@@ -39,7 +39,7 @@ $('#restaurant').click(() => {
       switchPage(idPage);
   });
   $(window).trigger('popstate');
-}
+});
 
 
 
