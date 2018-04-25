@@ -11,6 +11,7 @@
 // }
 
 $(function () {
+  menuHandler();
     $(".flags a").each(function (index) {
         $(this).click(() => {
             var video = $(".player video").get(0);
@@ -19,4 +20,24 @@ $(function () {
             video.play();
         });
     });
+
 });
+
+// Fonction pour charger les points d interets
+function switchPage(pageId) {
+    $(".page").hide();
+    $("#page_" + pageId).show();
+}
+
+function menuHandler() {
+  $('#restaurant').click(() => {
+    var idPage = 'restaurant';
+  });
+    $(window).on("popstate", function(e) {
+        var idPage = location.hash;
+        idPage = idPage.substring(1);
+            window.location = "#" + idPage;
+        switchPage(idPage);
+    });
+    $(window).trigger('popstate');
+}
