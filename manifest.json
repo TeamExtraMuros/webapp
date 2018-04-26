@@ -1,105 +1,105 @@
 {
     "dir": "ltr",
-    "lang": "fr",
+    "lang": "French",
     "name": "Votre séjour à l'UIT",
     "scope": "/html",
     "display": "fullscreen",
     "start_url": "https://extra-muros.herokuapp.com/html/etape1.html",
-    "short_name": "sejour UIT",
+    "short_name": "Extra muros",
     "theme_color": "transparent",
-    "description": "",
-    "orientation": "any",
-    "background_color": "transparent",
+    "description": "Cette application est déstinées aux députés du canton et de la république de Genève, durant leurs transition dans la salle Popov de l'UIT.",
+    "orientation": "portrait",
+    "background_color": "pick",
     "related_applications": [],
     "prefer_related_applications": false,
     "icons": [
         {
-            "src": "/images/c9f3ee37-5cee-b05e-cd3b-53d4c48b6e3a.webPlatform.png",
+            "src": "/Images/79b38fb5-e668-6284-bf7c-c1fe57b5658a.webPlatform.png",
             "sizes": "48x48",
             "type": "image/png"
         },
         {
-            "src": "/images/98f580cc-2255-0376-e34b-dd08bb7424b7.webPlatform.png",
+            "src": "/Images/54cbd2a4-3457-429b-1191-a04280a31fd6.webPlatform.png",
             "sizes": "1240x600",
             "type": "image/png"
         },
         {
-            "src": "/images/a6fbe3b2-db63-f51b-5fc6-e1eb38e20111.webPlatform.png",
+            "src": "/Images/dc569626-8a17-8c25-5a10-48bf25203a09.webPlatform.png",
             "sizes": "300x300",
             "type": "image/png"
         },
         {
-            "src": "/images/5d2afd28-d167-e411-ff40-c16d8d211a65.webPlatform.png",
+            "src": "/Images/37b67373-78bf-eb3a-af8f-aacd9108ed85.webPlatform.png",
             "sizes": "150x150",
             "type": "image/png"
         },
         {
-            "src": "/images/8587837f-a527-60fe-9a74-904e0157b565.webPlatform.png",
+            "src": "/Images/72e3d6a3-49b5-54f3-4dd2-7958d589b512.webPlatform.png",
             "sizes": "88x88",
             "type": "image/png"
         },
         {
-            "src": "/images/8e560b3f-7341-3bca-0e5f-d42ed624804f.webPlatform.png",
+            "src": "/Images/1693ee42-4b12-6021-6a8b-2c46c7251843.webPlatform.png",
             "sizes": "24x24",
             "type": "image/png"
         },
         {
-            "src": "/images/605fbb61-e34a-9d60-f49c-1153c58462af.webPlatform.png",
+            "src": "/Images/29a6af37-3499-dcf5-fca2-699099dd7140.webPlatform.png",
             "sizes": "50x50",
             "type": "image/png"
         },
         {
-            "src": "/images/c7debf2d-09b0-7e27-c7ce-fae51a7d104c.webPlatform.png",
+            "src": "/Images/97af9ab2-6e5b-6076-b8b5-61de0f1f2d40.webPlatform.png",
             "sizes": "620x300",
             "type": "image/png"
         },
         {
-            "src": "/images/f8e2ca5a-67db-5ca4-1085-251e39d017ee.webPlatform.png",
+            "src": "/Images/49b572bf-51f2-ee41-ba66-ec778d41d0f6.webPlatform.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "/images/b61710b8-188c-a06d-f8e8-e52a232e3590.webPlatform.png",
+            "src": "/Images/85c40f7e-f519-376e-2e2a-8542fd703756.webPlatform.png",
             "sizes": "144x144",
             "type": "image/png"
         },
         {
-            "src": "/images/fe963864-3bf9-051d-e334-eb31b3d0a78b.webPlatform.png",
+            "src": "/Images/536e0a9c-efd8-b31d-fe32-f86b710f59ee.webPlatform.png",
             "sizes": "96x96",
             "type": "image/png"
         },
         {
-            "src": "/images/2d92e79d-383d-46c2-e470-a51d2b3be2f4.webPlatform.png",
+            "src": "/Images/8b4c4639-a4db-8af8-5121-032c2fb6d82f.webPlatform.png",
             "sizes": "72x72",
             "type": "image/png"
         },
         {
-            "src": "/images/75a0d7c1-4912-8b0d-3a23-7728337eef1d.webPlatform.png",
+            "src": "/Images/e26f84a0-f987-1bb2-fd9f-eb9a5f2266cb.webPlatform.png",
             "sizes": "36x36",
             "type": "image/png"
         },
         {
-            "src": "/images/ios/ios-appicon-1024-1024.png",
+            "src": "/Images/2f088e8a-8af9-45f8-510a-0b1d02968394.webPlatform.png",
             "sizes": "1024x1024",
             "type": "image/png"
         },
         {
-            "src": "/images/ce4aa177-5063-0ac9-8fb7-67715c8edd26.webPlatform.png",
+            "src": "/Images/3d92e097-ae51-1b50-db2e-68c92a5e0c3d.webPlatform.png",
             "sizes": "180x180",
             "type": "image/png"
         },
         {
-            "src": "/images/9a5a2b16-a03f-24ef-3598-b5286707621a.webPlatform.png",
+            "src": "/Images/1a8f5018-a32f-f2ac-18cc-1afcbfa98f8a.webPlatform.png",
             "sizes": "152x152",
             "type": "image/png"
         },
         {
-            "src": "/images/0207d4af-21bc-2ca4-1855-b4e91e5fa66b.webPlatform.png",
+            "src": "/Images/cf4c761c-2676-480b-6ecd-46003bcc74c8.webPlatform.png",
             "sizes": "120x120",
             "type": "image/png"
         },
         {
-            "src": "/images/30191bf3-7b26-5803-025f-858a1a8f4cd2.webPlatform.png",
+            "src": "/Images/27eaa2b5-0baa-7caf-94b1-357a2f7ee279.webPlatform.png",
             "sizes": "76x76",
             "type": "image/png"
         }
