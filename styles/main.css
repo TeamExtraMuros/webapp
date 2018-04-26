@@ -327,6 +327,29 @@ table {
 .page .col{
   padding-bottom: 5%;
 }
+.dropdown p{
+  font-size: 1.3em !important;
+  padding: 2% 0 2% 5%;
+}
+.dropdown p:hover{
+  background-color: #F4CA07;
+}
+.card-etape4{
+  height: 550px;
+}
+.dropdown-content{
+  width: 20%;
+  height: auto;
+  cursor: pointer;
+}
+.dropdown-button{
+  background-color: #F4CA07;
+  color: #2e2e2e !important;
+}
+.dropdown-button:hover{
+  color: white !important;
+  background-color: #F4CA07;
+}
 
 /* ------ */
 

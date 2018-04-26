@@ -30,10 +30,27 @@ $(function () {
     $(window).on("popstate", function (e) {
         var idPage = location.hash;
         idPage = idPage.substring(1);
-        window.location = "#" + idPage;
+        //window.location = "#" + idPage;
         switchPage(idPage);
     });
     $(window).trigger('popstate');
+
+    // SOUS-MENU LOGIC
+    var infos_resto = info_resto.children;
+    $(infos_resto).hide();
+    console.log(test1.children);
+    $(test1.children).on("click", function (e){
+      var nom = "#" + this.getAttribute('id') + "-info";
+      console.log(nom);
+      $(infos_resto).hide();
+      $(nom).show();
+    });
+
+
+
+    /*$("#nom-thai").on("click", function(e){
+      $("#resto-thai").show();
+    });*/
     // ========================
 
 
