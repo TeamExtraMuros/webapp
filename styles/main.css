@@ -345,15 +345,7 @@ table {
     padding: 2% 5%;
 }
 .contact-sggc {
-    background-color: #e6514f;
-    padding: 5% 10%;
-    margin-left: 10%;
-}
-.contact-sggc p:not(.contact-subtitle) {
-    margin-bottom: 10% !important;
-}
-.contact-sggc p:not(.contact-subtitle):last-child {
-    margin-bottom: 0% !important;
+    margin-left: 20%;
 }
 .contact-sggc a {
     text-decoration: underline;
@@ -363,6 +355,19 @@ table {
 }
 .contact-subtitle {
     font-weight: bold;
+    margin-top: 5% !important;
+    color: #e6514f;
+}
+.contact-subtitle:first-child {
+    margin-top: 0% !important;
+    margin-bottom: 5% !important;
+}
+.contact-sggc p.contact-adress:first-child {
+    margin-top: 5% !important;
+}
+.contact-sggc .contact-adress,
+.contact-sggc .contact-info {
+    font-size: 1em;
 }
 .questions {
     margin: 6% 0% 1% 0% !important;
@@ -591,12 +596,16 @@ table {
         width: 100%;
         margin-top: 5%;
     }
-    p.contact-msg:last-child {
+    .contact-msg:last-child {
         margin-bottom: 5% !important;
     }
     .contact-sggc {
         margin-left: 0%;
         margin-bottom: 5%;
+    }
+    .contact-sggc .contact-adress,
+    .contact-sggc .contact-info {
+        font-size: 2.5em;
     }
     /* ------ */
 }
