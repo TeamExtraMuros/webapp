@@ -209,7 +209,7 @@ a:hover {
 #map-frame {
     margin-left: 5%;
     height: 80%;
-    max-height: 250px;
+    max-height: 450px;
 }
 */ p a {
     font-weight: bold;
@@ -324,83 +324,95 @@ table {
 .dollar {
     color: #2e2e2e;
 }
-.page .col{
-  padding-bottom: 5%;
+.page .col {
+    padding-bottom: 5%;
 }
-.dropdown p{
-  font-size: 1.3em !important;
-  padding: 2% 0 2% 5%;
+.dropdown p {
+    font-size: 1.3em !important;
+    padding: 2% 0 2% 5%;
 }
-.dropdown2 p{
-  font-size: 1.3em !important;
-  padding: 2% 0 2% 5%;
+.dropdown p:hover {
+    background-color: #F4CA07;
 }
-.dropdown3 p{
-  font-size: 1.3em !important;
-  padding: 2% 0 2% 5%;
+.card-etape4 {
+    height: 550px;
 }
-.dropdown4 p{
-  font-size: 1.3em !important;
-  padding: 2% 0 2% 5%;
+.dropdown2 p {
+    font-size: 1.3em !important;
+    padding: 2% 0 2% 5%;
 }
-.dropdown p:hover{
-  background-color: #F4CA07;
+.dropdown3 p {
+    font-size: 1.3em !important;
+    padding: 2% 0 2% 5%;
 }
-.dropdown2 p:hover{
-  background-color: #C3D2E5;
+.dropdown4 p {
+    font-size: 1.3em !important;
+    padding: 2% 0 2% 5%;
 }
-.dropdown3 p:hover{
-  background-color: #E6514F;
+.dropdown p:hover {
+    background-color: #F4CA07;
 }
-.dropdown4 p:hover{
-  background-color: #80CBAD;
+.dropdown2 p:hover {
+    background-color: #C3D2E5;
 }
-.card-etape4{
-  height: 550px;
+.dropdown3 p:hover {
+    background-color: #E6514F;
 }
-.dropdown-content{
-  width: 20%;
-  height: auto;
-  cursor: pointer;
+.dropdown4 p:hover {
+    background-color: #80CBAD;
 }
-.btn-dropdown-1{
-  background-color: #F4CA07;
-  color: #2e2e2e !important;
+.dropdown-content {
+    width: 20%;
+    height: auto;
+    cursor: pointer;
 }
-.btn-dropdown-1:hover{
-  color: white !important;
-  background-color: #F4CA07;
+.dropdown-button {
+    background-color: #F4CA07;
+    color: #2e2e2e !important;
 }
-.btn-dropdown-2{
-  background-color: #C3D2E5;
-  color: #2e2e2e !important;
+.dropdown-button:hover {
+    color: white !important;
+    background-color: #F4CA07;
 }
-.btn-dropdown-2:hover{
-  background-color: #C3D2E5;
-  color: white !important;
+.btn-dropdown-1 {
+    background-color: #F4CA07;
+    color: #2e2e2e !important;
 }
-.btn-dropdown-3{
-  background-color: #E6514F;
-  color: #2e2e2e !important;
+.btn-dropdown-1:hover {
+    color: white !important;
+    background-color: #F4CA07;
 }
-.btn-dropdown-3:hover{
-  background-color: #E6514F;
-  color: white !important;
+.btn-dropdown-2 {
+    background-color: #C3D2E5;
+    color: #2e2e2e !important;
 }
-.btn-dropdown-4{
-  background-color: #80CBAD;
-  color: #2e2e2e !important;
+.btn-dropdown-2:hover {
+    background-color: #C3D2E5;
+    color: white !important;
 }
-.btn-dropdown-4:hover{
-  background-color: #80CBAD;
-  color: white !important;
+.btn-dropdown-3 {
+    background-color: #E6514F;
+    color: #2e2e2e !important;
 }
-.fa-dollar-sign{
-  color: #E6514F;
+.btn-dropdown-3:hover {
+    background-color: #E6514F;
+    color: white !important;
 }
-.dollar_grey{
-  color: grey;
+.btn-dropdown-4 {
+    background-color: #80CBAD;
+    color: #2e2e2e !important;
 }
+.btn-dropdown-4:hover {
+    background-color: #80CBAD;
+    color: white !important;
+}
+.fa-dollar-sign {
+    color: #E6514F;
+}
+.dollar_grey {
+    color: grey;
+}
+
 /* ------ */
 
 

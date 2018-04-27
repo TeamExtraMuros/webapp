@@ -12,6 +12,15 @@ if ('serviceWorker' in navigator) {
 
 $(function () {
 
+    // ======== SWIPE ========= 
+    document.addEventListener('touchstart', handleTouchStart, false);
+    document.addEventListener('touchmove', handleTouchMove, false);
+
+    var xDown = null;
+    var yDown = null;
+
+    // ========================
+
     // ======== STEP 2 LOGIC ========
 
     $(".flags a").each(function (index) {
@@ -119,6 +128,57 @@ $(function () {
 
     // ========================
 });
+
+// ======== SWIPE =========
+
+function nextPage(action) {
+
+    // get step number from URL
+    var currentStep = parseInt(window.location.pathname.split('/').pop().substr(5, 1));
+    switch (action) {
+        case "next":
+            if (currentStep != 5) {
+                window.location = "etape" + (currentStep + 1) + ".html";
+            }
+            break;
+        case "prev":
+            if (currentStep != 1) {
+                window.location = "etape" + (currentStep - 1) + ".html";
+            }
+            break;
+    }
+
+}
+
+function handleTouchStart(evt) {
+    xDown = evt.touches[0].clientX;
+    yDown = evt.touches[0].clientY;
+};
+
+function handleTouchMove(evt) {
+    if (!xDown || !yDown) {
+        return;
+    }
+
+    var xUp = evt.touches[0].clientX;
+    var yUp = evt.touches[0].clientY;
+
+    var xDiff = xDown - xUp;
+    var yDiff = yDown - yUp;
+
+    if (Math.abs(xDiff) > Math.abs(yDiff)) { /*most significant*/
+        if (xDiff > 0) {
+            nextPage('next');
+        } else {
+            nextPage('prev');
+        }
+    }
+    /* reset values */
+    xDown = null;
+    yDown = null;
+};
+
+// ========================
 
 // ======== GENERIC FUNCTIONS FOR ALL MAPS IN ALL STEPS =========
 
