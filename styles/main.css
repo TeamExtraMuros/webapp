@@ -337,6 +337,30 @@ table {
 .card-etape4 {
     height: 550px;
 }
+.dropdown2 p {
+    font-size: 1.3em !important;
+    padding: 2% 0 2% 5%;
+}
+.dropdown3 p {
+    font-size: 1.3em !important;
+    padding: 2% 0 2% 5%;
+}
+.dropdown4 p {
+    font-size: 1.3em !important;
+    padding: 2% 0 2% 5%;
+}
+.dropdown p:hover {
+    background-color: #F4CA07;
+}
+.dropdown2 p:hover {
+    background-color: #C3D2E5;
+}
+.dropdown3 p:hover {
+    background-color: #E6514F;
+}
+.dropdown4 p:hover {
+    background-color: #80CBAD;
+}
 .dropdown-content {
     width: 20%;
     height: auto;
@@ -349,6 +373,44 @@ table {
 .dropdown-button:hover {
     color: white !important;
     background-color: #F4CA07;
+}
+.btn-dropdown-1 {
+    background-color: #F4CA07;
+    color: #2e2e2e !important;
+}
+.btn-dropdown-1:hover {
+    color: white !important;
+    background-color: #F4CA07;
+}
+.btn-dropdown-2 {
+    background-color: #C3D2E5;
+    color: #2e2e2e !important;
+}
+.btn-dropdown-2:hover {
+    background-color: #C3D2E5;
+    color: white !important;
+}
+.btn-dropdown-3 {
+    background-color: #E6514F;
+    color: #2e2e2e !important;
+}
+.btn-dropdown-3:hover {
+    background-color: #E6514F;
+    color: white !important;
+}
+.btn-dropdown-4 {
+    background-color: #80CBAD;
+    color: #2e2e2e !important;
+}
+.btn-dropdown-4:hover {
+    background-color: #80CBAD;
+    color: white !important;
+}
+.fa-dollar-sign {
+    color: #E6514F;
+}
+.dollar_grey {
+    color: grey;
 }
 
 /* ------ */
