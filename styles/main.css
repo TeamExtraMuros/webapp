@@ -276,7 +276,6 @@ table {
 }
 
 /*Etape 4*/
-
 .btn-resto {
     background-color: #F4CA07 !important;
     color: #2e2e2e !important;
@@ -335,7 +334,7 @@ table {
     background-color: #F4CA07;
 }
 .card-etape4 {
-    height: 550px;
+    height: 1000px;
 }
 .dropdown2 p {
     font-size: 1.3em !important;
@@ -411,6 +410,36 @@ table {
 }
 .dollar_grey {
     color: grey;
+}
+#map {
+  height: 50%;
+}
+#sous-menu{
+  margin-bottom: 20%;
+}
+.infoWindowService{
+font-weight: bold;
+color: #c3d2e5;
+font-size: 1.2em;
+}
+.infoWindowMagasin{
+font-weight: bold;
+color: #e6514f;
+font-size: 1.2em;
+}
+.infoWindowRestaurant{
+font-weight: bold;
+color: #f4ca07;
+font-size: 1.2em;
+}
+.infoWindowLoisir{
+font-weight: bold;
+color: #80cbad;
+font-size: 1.2em;
+}
+.infoWindowUIT{
+font-weight: bold;
+font-size: 1.2em;
 }
 
 /* ------ */
@@ -677,9 +706,7 @@ table {
         max-height: 600px;
     }
     /* Etape 4 */
-    .card-etape4{
-      height: auto;
-    }
+
     /* Etape 5 */
     .title-step5 {
         width: 100%;
