@@ -209,7 +209,7 @@ a:hover {
 #map-frame {
     margin-left: 5%;
     height: 80%;
-    max-height: 250px;
+    max-height: 450px;
 }
 */ p a {
     font-weight: bold;
@@ -324,31 +324,31 @@ table {
 .dollar {
     color: #2e2e2e;
 }
-.page .col{
-  padding-bottom: 5%;
+.page .col {
+    padding-bottom: 5%;
 }
-.dropdown p{
-  font-size: 1.3em !important;
-  padding: 2% 0 2% 5%;
+.dropdown p {
+    font-size: 1.3em !important;
+    padding: 2% 0 2% 5%;
 }
-.dropdown p:hover{
-  background-color: #F4CA07;
+.dropdown p:hover {
+    background-color: #F4CA07;
 }
-.card-etape4{
-  height: 550px;
+.card-etape4 {
+    height: 550px;
 }
-.dropdown-content{
-  width: 20%;
-  height: auto;
-  cursor: pointer;
+.dropdown-content {
+    width: 20%;
+    height: auto;
+    cursor: pointer;
 }
-.dropdown-button{
-  background-color: #F4CA07;
-  color: #2e2e2e !important;
+.dropdown-button {
+    background-color: #F4CA07;
+    color: #2e2e2e !important;
 }
-.dropdown-button:hover{
-  color: white !important;
-  background-color: #F4CA07;
+.dropdown-button:hover {
+    color: white !important;
+    background-color: #F4CA07;
 }
 
 /* ------ */
