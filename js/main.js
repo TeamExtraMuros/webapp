@@ -32,21 +32,42 @@ $(function () {
         idPage = idPage.substring(1);
         //window.location = "#" + idPage;
         switchPage(idPage);
+        $('.dropdown-button').trigger('open');
     });
     $(window).trigger('popstate');
 
     // SOUS-MENU LOGIC
     var infos_resto = info_resto.children;
     $(infos_resto).hide();
-    console.log(test1.children);
-    $(test1.children).on("click", function (e){
+    $(liste_resto.children).on("click", function (e){
       var nom = "#" + this.getAttribute('id') + "-info";
-      console.log(nom);
       $(infos_resto).hide();
       $(nom).show();
     });
 
+    var infos_service = info_service.children;
+    $(infos_service).hide();
+    $(liste_service.children).on("click", function (e){
+      var nom = "#" + this.getAttribute('id') + "-info";
+      $(infos_service).hide();
+      $(nom).show();
+    });
 
+    var infos_magasin = info_magasin.children;
+    $(infos_magasin).hide();
+    $(liste_magasin.children).on("click", function (e){
+      var nom = "#" + this.getAttribute('id') + "-info";
+      $(infos_magasin).hide();
+      $(nom).show();
+    });
+
+    var infos_loisir = info_loisir.children;
+    $(infos_loisir).hide();
+    $(liste_loisir.children).on("click", function (e){
+      var nom = "#" + this.getAttribute('id') + "-info";
+      $(infos_loisir).hide();
+      $(nom).show();
+    });
 
     /*$("#nom-thai").on("click", function(e){
       $("#resto-thai").show();
