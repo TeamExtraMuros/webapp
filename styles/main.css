@@ -223,17 +223,33 @@ p a:hover {
     color: white !important;
     position: static;
 }
+
+.custom-green {
+    background-color: #80CBAD;
+}
+
+.custom-red {
+    background-color: #E6514F;
+}
+
 .btn:hover {
     background-color: white;
     font-weight: bold;
+}
+
+.custom-green:hover{
     color: #80CBAD !important;
+
+}
+.custom-red:hover{
+    color: #E6514F !important;
 }
 table {
     margin-top: 2%;
 }
 .flags a {
     color: white !important;
-    margin-top: 10%;
+    margin-top: 5%;
     font-weight: bold;
     display: block;
     text-align: left;
@@ -334,7 +350,7 @@ table {
     background-color: #F4CA07;
 }
 .card-etape4 {
-    height: 1000px;
+    /* height: 1500px; */
 }
 .dropdown2 p {
     font-size: 1.3em !important;
@@ -412,7 +428,7 @@ table {
     color: grey;
 }
 #map {
-  height: 50%;
+  height: 400px;
 }
 #sous-menu{
   margin-bottom: 20%;
@@ -440,6 +456,10 @@ font-size: 1.2em;
 .infoWindowUIT{
 font-weight: bold;
 font-size: 1.2em;
+}
+
+.withMargin {
+    margin-top: 10% !important;
 }
 
 /* ------ */
@@ -712,14 +732,9 @@ font-size: 1.2em;
     .dropdown{
       width: 100%;
       font-size: 2em !important;
-      position: relative;
-    }
-    .liste_resto{
-      display: inline !important;
-
-    }
-    #info_resto{
-      position: relative;
+      position: relative !important;
+      top: 0 !important;
+      left: 0 !important;
     }
     #info_resto a{
       font-size: 3em !important;
@@ -728,8 +743,8 @@ font-size: 1.2em;
       font-size: 3em !important;
     }
     .dropdown p {
-        font-size: 1.5em !important;
-        padding: 1% 0;
+      font-size: 1.5em !important;
+      padding: 1% 0;
     }
     /* Etape 5 */
     .title-step5 {
