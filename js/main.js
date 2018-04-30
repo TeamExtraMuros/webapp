@@ -41,7 +41,9 @@ $(function () {
         idPage = idPage.substring(1);
         //window.location = "#" + idPage;
         switchPage(idPage);
-
+        if ('screen' in window && window.screen.width > 640) {
+            $('.dropdown-button').trigger('open');
+        }
         $('#map').hide();
     });
     $(window).trigger('popstate');
