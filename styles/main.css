@@ -710,9 +710,26 @@ font-size: 1.2em;
       height: auto;
     }
     .dropdown{
-      width: auto;
+      width: 100%;
       font-size: 2em !important;
-      z-index: 0 !important;
+      position: relative;
+    }
+    .liste_resto{
+      display: inline !important;
+
+    }
+    #info_resto{
+      position: relative;
+    }
+    #info_resto a{
+      font-size: 3em !important;
+    }
+    .fa-dollar-sign{
+      font-size: 3em !important;
+    }
+    .dropdown p {
+        font-size: 1.5em !important;
+        padding: 1% 0;
     }
     /* Etape 5 */
     .title-step5 {
