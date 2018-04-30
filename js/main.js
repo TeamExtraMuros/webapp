@@ -78,17 +78,17 @@ var contentStringLoisir3 = '<div class="infoWindowLoisir">Let\'s Go Fitness</div
 var contentStringLoisir4 = '<div class="infoWindowLoisir">Parc de l\'Ariana</div>';
 var contentStringLoisir5 = '<div class="infoWindowLoisir">Parc de Vermont</div>';
 
-if ('serviceWorker' in navigator) {
-    window.addEventListener('load', function () {
-        navigator.serviceWorker.register('../sw.js').then(function (registration) {
-            // Registration was successful
-            console.log('ServiceWorker registration successful with scope: ', registration.scope);
-        }, function (err) {
-            // registration failed :(
-            console.log('ServiceWorker registration failed: ', err);
-        });
-    });
-}
+// if ('serviceWorker' in navigator) {
+//     window.addEventListener('load', function () {
+//         navigator.serviceWorker.register('../sw.js').then(function (registration) {
+//             // Registration was successful
+//             console.log('ServiceWorker registration successful with scope: ', registration.scope);
+//         }, function (err) {
+//             // registration failed :(
+//             console.log('ServiceWorker registration failed: ', err);
+//         });
+//     });
+// }
 
 $(function () {
 
