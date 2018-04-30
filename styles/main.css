@@ -515,7 +515,7 @@ font-size: 1.2em;
         font-family: fontawesome !important;
     }
     .hideOnMobile {
-        display: none;
+        display: none !important;
     }
     .hideOnDesktop {
         display: inline;
@@ -726,7 +726,14 @@ font-size: 1.2em;
         max-height: 600px;
     }
     /* Etape 4 */
-
+    .card-etape4{
+      height: auto;
+    }
+    .dropdown{
+      width: auto;
+      font-size: 2em !important;
+      z-index: 0 !important;
+    }
     /* Etape 5 */
     .title-step5 {
         width: 100%;
