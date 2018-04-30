@@ -223,17 +223,33 @@ p a:hover {
     color: white !important;
     position: static;
 }
+
+.custom-green {
+    background-color: #80CBAD;
+}
+
+.custom-red {
+    background-color: #E6514F;
+}
+
 .btn:hover {
     background-color: white;
     font-weight: bold;
+}
+
+.custom-green:hover{
     color: #80CBAD !important;
+    
+}
+.custom-red:hover{
+    color: #E6514F !important;
 }
 table {
     margin-top: 2%;
 }
 .flags a {
     color: white !important;
-    margin-top: 10%;
+    margin-top: 5%;
     font-weight: bold;
     display: block;
     text-align: left;
@@ -334,7 +350,7 @@ table {
     background-color: #F4CA07;
 }
 .card-etape4 {
-    height: 1000px;
+    /* height: 1500px; */
 }
 .dropdown2 p {
     font-size: 1.3em !important;
@@ -412,7 +428,7 @@ table {
     color: grey;
 }
 #map {
-  height: 50%;
+  height: 400px;
 }
 #sous-menu{
   margin-bottom: 20%;
@@ -442,6 +458,10 @@ font-weight: bold;
 font-size: 1.2em;
 }
 
+.withMargin {
+    margin-top: 10% !important;
+}
+
 /* ------ */
 
 
@@ -454,7 +474,7 @@ font-size: 1.2em;
     color: white;
     font-weight: bold;
     font-size: 2em;
-    width: 40%;
+    width: 50%;
     margin-bottom: 10%;
     padding: 2% 5%;
 }
