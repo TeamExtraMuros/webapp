@@ -31,6 +31,10 @@ header,
 body {
     color: #2e2e2e !important;
 }
+
+header {
+    height: 150px;
+}
 i {
     font-family: fontawesome !important;
     font-weight: lighter !important;
