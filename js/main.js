@@ -237,6 +237,35 @@ $(function () {
 
 // ======== SWIPE =========
 
+function handleTouchStart(evt) {
+    xDown = evt.touches[0].clientX;
+    yDown = evt.touches[0].clientY;
+};
+
+function handleTouchMove(evt) {
+    if (!xDown || !yDown) {
+        return;
+    }
+
+    var xUp = evt.touches[0].clientX;
+    var yUp = evt.touches[0].clientY;
+
+    var xDiff = xDown - xUp;
+    var yDiff = yDown - yUp;
+
+    if (Math.abs(xDiff) > Math.abs(yDiff)) { /*most significant*/
+        console.log(xDiff);
+        if (xDiff > 40) {
+            nextPage('next');
+        } else if (xDiff < -40) {
+            nextPage('prev');
+        }
+    }
+    /* reset values */
+    xDown = null;
+    yDown = null;
+};
+
 function nextPage(action) {
 
     // get step number from URL
@@ -255,34 +284,6 @@ function nextPage(action) {
     }
 
 }
-
-function handleTouchStart(evt) {
-    xDown = evt.touches[0].clientX;
-    yDown = evt.touches[0].clientY;
-};
-
-function handleTouchMove(evt) {
-    if (!xDown || !yDown) {
-        return;
-    }
-
-    var xUp = evt.touches[0].clientX;
-    var yUp = evt.touches[0].clientY;
-
-    var xDiff = xDown - xUp;
-    var yDiff = yDown - yUp;
-
-    if (Math.abs(xDiff) > Math.abs(yDiff)) { /*most significant*/
-        if (xDiff > 30) {
-            nextPage('next');
-        } else if (xDiff < -30) {
-            nextPage('prev');
-        }
-    }
-    /* reset values */
-    xDown = null;
-    yDown = null;
-};
 
 // ========================
 
