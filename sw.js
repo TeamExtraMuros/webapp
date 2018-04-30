@@ -22,7 +22,8 @@ var CACHE_FILES = [
     'styles/fontawesome-all.css',
     'styles/main.css',
     'styles/materialize.min.css',
-    'videos/test.mp4'
+    'videos/Video1.mp4',
+    'videos/Video3.mp4'
 ];
 
 self.addEventListener('install', function(event) {    
