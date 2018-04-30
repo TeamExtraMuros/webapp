@@ -122,7 +122,7 @@ $(function () {
         //window.location = "#" + idPage;
         switchPage(idPage);
         if ('screen' in window && window.screen.width > 640) {
-            $('.dropdown-button').trigger('open');
+          $('.dropdown-button').trigger('open');
         }
         $('#map').hide();
     });
