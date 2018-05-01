@@ -384,6 +384,7 @@ table {
     width: 20%;
     height: auto;
     cursor: pointer;
+    position: absolute;
 }
 .dropdown-button {
     background-color: #F4CA07;
@@ -436,6 +437,7 @@ table {
 }
 #sous-menu{
   margin-bottom: 20%;
+  position: relative;
 }
 .infoWindowService{
 font-weight: bold;
