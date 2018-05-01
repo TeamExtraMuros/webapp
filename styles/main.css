@@ -356,10 +356,11 @@ table {
 .btn_showListInfo{
   color: #2e2e2e !important;
   width: 100%;
+  cursor: default;
 }
-.btn_showListInfo:hover{
+/*.btn_showListInfo:hover{
   color: white !important;
-}
+}*/
 #dropdown1{
   background-color: #F4CA07;
 }
@@ -374,8 +375,8 @@ table {
 }
 .listInfoEntry{
   cursor: pointer;
-  display: none;
   padding: 1% 0 1% 2%;
+  background-color: #f2f2f2;
 }
 #liste_resto .listInfoEntry:hover{
   background-color: #F4CA07;
@@ -713,6 +714,9 @@ footer{
         max-height: 600px;
     }
     /* Etape 4 */
+    .btn_showListInfo{
+      margin-bottom: 0;
+    }
     .InfoEntry{
       margin: 0;
       margin-left: 2%;

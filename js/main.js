@@ -45,10 +45,11 @@ $(function () {
     $(window).trigger('popstate');
 
 
-    $(".btn_showListInfo").on("click", function () {
+    /*$(".btn_showListInfo").on("click", function () {
       var idListInfo = $(this).attr("data-activates");
       $("#" + idListInfo).find("p").show();
-    });
+    });*/
+    
     $(".listInfoEntry").on("click", function () {
         var idEntry = $(this).attr('id');
           $(".InfoEntry").hide();
