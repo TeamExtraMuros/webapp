@@ -306,6 +306,10 @@ p.subtitle-p {
     margin-bottom: 5% !important;
 }
 
+.img-popov {
+    width: 100%;
+}
+
 /*Etape 4*/
 .btn-resto {
     background-color: #F4CA07 !important;
