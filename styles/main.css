@@ -107,14 +107,17 @@ a:hover {
     margin-left: 10%;
     margin-right: 10%;
     grid-template-columns: repeat(9, 1fr);
-    margin-top: 150px;
+    margin-top: 10%;
+    font-weight: bold;
 }
+
 
 /*Element dans la grille*/
 
 .grid-item {
     text-align: center;
     font-size: 2.5em;
+    padding-top: 0%;
 }
 .grid-item p {
     font-size: 0.5em;
@@ -124,6 +127,10 @@ a:hover {
     font-size: 1.3em;
 }
 
+.custom-icon {
+    /* fix display from menu */
+    margin: 10%;
+}
 /*fleche entre onglet du menu*/
 
 .next {
