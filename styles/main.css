@@ -114,7 +114,7 @@ a:hover {
 
 .grid-item {
     text-align: center;
-    font-size: 2em;
+    font-size: 2.5em;
 }
 .grid-item a {
     margin-top: 5%;
@@ -515,6 +515,15 @@ font-size: 1.2em;
     font-weight: bold;
 }
 
+/* FOOTER */
+footer{
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-weight: bold;
+  color: #2e2e2e;
+  text-align: center;
+}
+
 /* ------ */
 
 @media all and (max-device-width: 640px) {
@@ -642,7 +651,7 @@ font-size: 1.2em;
     }
     .st1 {
         background-color: #E6514F;
-        left: 37%;
+        left: 35.6%;
     }
     .st2 {
         background-color: #F4CA07;
