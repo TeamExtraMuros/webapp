@@ -39,7 +39,6 @@ $(function () {
     $(window).on("popstate", function (e) {
         var idPage = location.hash;
         idPage = idPage.substring(1);
-        //window.location = "#" + idPage;
         switchPage(idPage);
         $('#map').hide();
     });
@@ -56,50 +55,6 @@ $(function () {
           $("#" + idEntry + "-info").show();
           $('#map').show();
     })
-    // SOUS-MENU LOGIC
-    // var infos_resto = $("#info_resto").find('div');
-    // infos_resto.hide();
-    // $("#liste_resto").hide();
-    // $("#dropdown1").on("click", function (){
-    //     $("#liste_resto").show();
-    //     $("#liste_resto").find('p').show();
-    // })
-    // $("#liste_resto").find('p').on("click", function (e) {
-    //     var nom = "#" + this.getAttribute('id') + "-info";
-    //     $(infos_resto).hide();
-    //     $(nom).show();
-    //     $('#map').show();
-    //     console.log("COUCEWIOFHWEH");
-    //   return false;
-    // });
-
-    // var infos_service = info_service.children;
-    // $(infos_service).hide();
-    // $(liste_service.children).on("click", function (e) {
-    //     var nom = "#" + this.getAttribute('id') + "-info";
-    //     $(infos_service).hide();
-    //     $(nom).show();
-    //     $('#map').show();
-    // });
-    //
-    // var infos_magasin = info_magasin.children;
-    // $(infos_magasin).hide();
-    // $(liste_magasin.children).on("click", function (e) {
-    //     var nom = "#" + this.getAttribute('id') + "-info";
-    //     $(infos_magasin).hide();
-    //     $(nom).show();
-    //     $('#map').show();
-    // });
-    //
-    // var infos_loisir = info_loisir.children;
-    // $(infos_loisir).hide();
-    // $(liste_loisir.children).on("click", function (e) {
-    //     var nom = "#" + this.getAttribute('id') + "-info";
-    //     $(infos_loisir).hide();
-    //     $(nom).show();
-    //     $('#map').show();
-    // });
-
     // ========================
 
 
