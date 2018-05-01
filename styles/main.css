@@ -107,14 +107,17 @@ a:hover {
     margin-left: 10%;
     margin-right: 10%;
     grid-template-columns: repeat(9, 1fr);
-    margin-top: 150px;
+    margin-top: 10%;
 }
 
 /*Element dans la grille*/
 
 .grid-item {
     text-align: center;
-    font-size: 2.5em;
+    font-size: 2em;
+}
+.grid-item a {
+    margin-top: 5%;
 }
 .grid-item p {
     font-size: 0.5em;
