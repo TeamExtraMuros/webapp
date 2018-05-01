@@ -41,49 +41,64 @@ $(function () {
         idPage = idPage.substring(1);
         //window.location = "#" + idPage;
         switchPage(idPage);
-        if ('screen' in window && window.screen.width > 640) {
-            $('.dropdown-button').trigger('open');
-        }
         $('#map').hide();
     });
     $(window).trigger('popstate');
 
+
+    $(".btn_showListInfo").on("click", function () {
+      var idListInfo = $(this).attr("data-activates");
+      $("#" + idListInfo).find("p").show();
+    });
+    $(".listInfoEntry").on("click", function () {
+        var idEntry = $(this).attr('id');
+          $(".InfoEntry").hide();
+          $("#" + idEntry + "-info").show();
+          $('#map').show();
+    })
     // SOUS-MENU LOGIC
-    var infos_resto = info_resto.children;
-    $(infos_resto).hide();
-    $(liste_resto.children).on("click", function (e) {
-        var nom = "#" + this.getAttribute('id') + "-info";
-        $(infos_resto).hide();
-        $(nom).show();
-        $('#map').show();
-    });
+    // var infos_resto = $("#info_resto").find('div');
+    // infos_resto.hide();
+    // $("#liste_resto").hide();
+    // $("#dropdown1").on("click", function (){
+    //     $("#liste_resto").show();
+    //     $("#liste_resto").find('p').show();
+    // })
+    // $("#liste_resto").find('p').on("click", function (e) {
+    //     var nom = "#" + this.getAttribute('id') + "-info";
+    //     $(infos_resto).hide();
+    //     $(nom).show();
+    //     $('#map').show();
+    //     console.log("COUCEWIOFHWEH");
+    //   return false;
+    // });
 
-    var infos_service = info_service.children;
-    $(infos_service).hide();
-    $(liste_service.children).on("click", function (e) {
-        var nom = "#" + this.getAttribute('id') + "-info";
-        $(infos_service).hide();
-        $(nom).show();
-        $('#map').show();
-    });
-
-    var infos_magasin = info_magasin.children;
-    $(infos_magasin).hide();
-    $(liste_magasin.children).on("click", function (e) {
-        var nom = "#" + this.getAttribute('id') + "-info";
-        $(infos_magasin).hide();
-        $(nom).show();
-        $('#map').show();
-    });
-
-    var infos_loisir = info_loisir.children;
-    $(infos_loisir).hide();
-    $(liste_loisir.children).on("click", function (e) {
-        var nom = "#" + this.getAttribute('id') + "-info";
-        $(infos_loisir).hide();
-        $(nom).show();
-        $('#map').show();
-    });
+    // var infos_service = info_service.children;
+    // $(infos_service).hide();
+    // $(liste_service.children).on("click", function (e) {
+    //     var nom = "#" + this.getAttribute('id') + "-info";
+    //     $(infos_service).hide();
+    //     $(nom).show();
+    //     $('#map').show();
+    // });
+    //
+    // var infos_magasin = info_magasin.children;
+    // $(infos_magasin).hide();
+    // $(liste_magasin.children).on("click", function (e) {
+    //     var nom = "#" + this.getAttribute('id') + "-info";
+    //     $(infos_magasin).hide();
+    //     $(nom).show();
+    //     $('#map').show();
+    // });
+    //
+    // var infos_loisir = info_loisir.children;
+    // $(infos_loisir).hide();
+    // $(liste_loisir.children).on("click", function (e) {
+    //     var nom = "#" + this.getAttribute('id') + "-info";
+    //     $(infos_loisir).hide();
+    //     $(nom).show();
+    //     $('#map').show();
+    // });
 
     // ========================
 

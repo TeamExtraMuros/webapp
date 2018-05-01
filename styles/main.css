@@ -346,15 +346,36 @@ table {
 .page .col {
     padding-bottom: 5%;
 }
+.btn_showListInfo{
+  color: #2e2e2e !important;
+  width: 100%;
+}
+.btn_showListInfo:hover{
+  color: white !important;
+}
+#dropdown1{
+  background-color: #F4CA07;
+}
+.listInfoEntry{
+  cursor: pointer;
+  display: none;
+  padding: 1% 0 1% 2%;
+}
+#liste_resto .listInfoEntry:hover{
+  background-color: #F4CA07;
+}
+.InfoEntry{
+  display: none;
+  margin-left: 15%;
+  margin-top: 5%;
+}
+/*
 .dropdown p {
     font-size: 1.3em !important;
     padding: 2% 0 2% 5%;
 }
 .dropdown p:hover {
     background-color: #F4CA07;
-}
-.card-etape4 {
-    /* height: 1500px; */
 }
 .dropdown2 p {
     font-size: 1.3em !important;
@@ -379,12 +400,6 @@ table {
 }
 .dropdown4 p:hover {
     background-color: #80CBAD;
-}
-.dropdown-content {
-    width: 20%;
-    height: auto;
-    cursor: pointer;
-    position: absolute;
 }
 .dropdown-button {
     background-color: #F4CA07;
@@ -425,7 +440,7 @@ table {
 .btn-dropdown-4:hover {
     background-color: #80CBAD;
     color: white !important;
-}
+}*/
 .fa-dollar-sign {
     color: #E6514F;
 }
@@ -741,6 +756,10 @@ footer{
         max-height: 600px;
     }
     /* Etape 4 */
+    .InfoEntry{
+      margin: 0;
+      margin-left: 2%;
+    }
     .card-etape4{
       height: auto;
     }
