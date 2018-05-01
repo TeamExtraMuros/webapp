@@ -363,6 +363,15 @@ table {
 #dropdown1{
   background-color: #F4CA07;
 }
+#dropdown2{
+  background-color: #C3D2E5;
+}
+#dropdown3{
+  background-color: #E6514F;
+}
+#dropdown4{
+  background-color: #80CBAD;
+}
 .listInfoEntry{
   cursor: pointer;
   display: none;
@@ -370,6 +379,15 @@ table {
 }
 #liste_resto .listInfoEntry:hover{
   background-color: #F4CA07;
+}
+#liste_service .listInfoEntry:hover{
+  background-color: #C3D2E5;
+}
+#liste_magasin .listInfoEntry:hover{
+  background-color: #E6514F;
+}
+#liste_loisir .listInfoEntry:hover{
+  background-color: #80CBAD;
 }
 .InfoEntry{
   display: none;
