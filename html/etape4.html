@@ -15,7 +15,10 @@
 
 <header>
     <h1 class="title">Votre séjour à l'UIT</h1>
-    <h2 id="st_mobile" class="st4">Points d'intérêts</h2>
+    <div class="grp_title">
+      <h1 class="title_mobile">Votre séjour à l'UIT</h1>
+      <h2 id="st_mobile" class="st4">Points d'intérêts</h2>
+    </div>
     <div class="grid-container" id="nav_desktop">
         <div class="grid-item">
             <a href="./etape1.html">
@@ -75,7 +78,7 @@
                 </div>
             </div>
             <div class="row withMargin sous_menu">
-                <h5>Listes des points d'intérêts</h5>
+                <h4>Listes des points d'intérêts</h4>
                 <div class="col l3 s12">
                     <a href="#restaurant" class="btn btn-resto btn_poi" id="restaurant">Restaurants</a>
                 </div>
@@ -92,7 +95,7 @@
 
             <div class="row page" id="page_restaurant">
                 <div class="col l4 s12" id="liste_resto">
-                    <span class="btn dropdown-button btn-dropdown-1 btn_showListInfo" id="dropdown1" data-activates="liste_resto">Liste des restaurants</span>
+                    <span class="btn btn_showListInfo" id="dropdown1"><i class="fas fa-arrow-alt-circle-down"></i> Liste des restaurants</span>
                     <p class="listInfoEntry" id="nom-tivoli">Brasserie Tivoli</p>
                     <p class="listInfoEntry"  id="nom-colombe">Colombe</p>
                     <p class="listInfoEntry" id="nom-homard">Homard Bleu</p>
@@ -250,7 +253,7 @@
 
             <div class="row page" id="page_service">
                 <div class="col l4 s12" id="liste_service">
-                      <span class="btn dropdown-button btn-dropdown-1 btn_showListInfo" id="dropdown2" data-activates="liste_service">Liste des services</span>
+                      <span class="btn dropdown-button btn-dropdown-1 btn_showListInfo" id="dropdown2" data-activates="liste_service"><i class="fas fa-arrow-alt-circle-down"></i> Liste des services</span>
                       <p class="listInfoEntry" id="nom-pharmacie">Pharmacie</p>
                       <p class="listInfoEntry" id="nom-poste1">Poste CICG</p>
                       <p class="listInfoEntry" id="nom-poste2">Poste Montbrillant</p>
@@ -312,10 +315,9 @@
                 </div>
             </div>
 
-
             <div class="row page" id="page_magasins">
                 <div class="col l4 s12" id="liste_magasin">
-                      <span class="btn dropdown-button btn-dropdown-3 btn_showListInfo" id="dropdown3" data-activates="liste_magasin">Liste des magasins</span>
+                      <span class="btn dropdown-button btn-dropdown-3 btn_showListInfo" id="dropdown3" data-activates="liste_magasin"><i class="fas fa-arrow-alt-circle-down"></i> Liste des magasins</span>
                       <p class="listInfoEntry" id="nom-balexert">Balexert</p>
                       <p class="listInfoEntry" id="nom-coop">Coop</p>
                       <p class="listInfoEntry" id="nom-denner">Denner</p>
@@ -389,10 +391,9 @@
 
             </div>
 
-
             <div class="row page" id="page_loisirs">
                 <div class="col l4 s12" id="liste_loisir">
-                      <span class="btn dropdown-button btn-dropdown-1 btn_showListInfo" id="dropdown4" data-activates="liste_loisir">Liste des loisirs</span>
+                      <span class="btn dropdown-button btn-dropdown-1 btn_showListInfo" id="dropdown4" data-activates="liste_loisir"><i class="fas fa-arrow-alt-circle-down"></i> Liste des loisirs</span>
                       <p class="listInfoEntry" id="nom-yoga">Centre de Yoga</p>
                       <p class="listInfoEntry" id="nom-fitness">Let's Go Fitness</p>
                       <p class="listInfoEntry" id="nom-pariana">Parc Ariana</p>
@@ -444,6 +445,7 @@
                     </div>
                 </div>
             </div>
+
         <div id="map" class="hideOnMobile"></div>
       </div>
   </div>

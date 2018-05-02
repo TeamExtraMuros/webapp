@@ -1,14 +1,14 @@
-// if ('serviceWorker' in navigator) {
-//    window.addEventListener('load', function () {
-//        navigator.serviceWorker.register('../sw.js').then(function (registration) {
-//            // Registration was successful
-//            console.log('ServiceWorker registration successful with scope: ', registration.scope);
-//        }, function (err) {
-//            // registration failed :(
-//            console.log('ServiceWorker registration failed: ', err);
-//        });
-//    });
-// }
+if ('serviceWorker' in navigator) {
+   window.addEventListener('load', function () {
+       navigator.serviceWorker.register('../sw.js').then(function (registration) {
+           // Registration was successful
+           console.log('ServiceWorker registration successful with scope: ', registration.scope);
+       }, function (err) {
+           // registration failed :(
+           console.log('ServiceWorker registration failed: ', err);
+       });
+   });
+}
 
 $(function () {
 
@@ -45,10 +45,11 @@ $(function () {
     $(window).trigger('popstate');
 
 
-    $(".btn_showListInfo").on("click", function () {
+    /*$(".btn_showListInfo").on("click", function () {
       var idListInfo = $(this).attr("data-activates");
       $("#" + idListInfo).find("p").show();
-    });
+    });*/
+    
     $(".listInfoEntry").on("click", function () {
         var idEntry = $(this).attr('id');
           $(".InfoEntry").hide();

@@ -41,7 +41,7 @@ i {
 
 /*Ttre du site*/
 
-h1 {
+.title {
     background-color: #2e2e2e;
     color: white;
     font-size: 2.5em !important;
@@ -52,6 +52,9 @@ h1 {
     text-align: center;
     padding: 1% 4%;
     transform: translate(-50%, -50%);
+}
+.title_mobile{
+  display: none;
 }
 h4 {
     font-size: 2.5em;
@@ -353,15 +356,19 @@ p.subtitle-p {
 .page .col {
     padding-bottom: 5%;
 }
-.btn_showListInfo {
-    color: #2e2e2e !important;
-    width: 100%;
+
+.btn_showListInfo{
+  color: #2e2e2e !important;
+  width: 100%;
+  cursor: default;
 }
-.btn_showListInfo:hover {
-    color: white !important;
-}
-#dropdown1 {
-    background-color: #F4CA07;
+
+/*.btn_showListInfo:hover{
+  color: white !important;
+}*/
+
+#dropdown1{
+  background-color: #F4CA07;
 }
 #dropdown2 {
     background-color: #C3D2E5;
@@ -372,10 +379,11 @@ p.subtitle-p {
 #dropdown4 {
     background-color: #80CBAD;
 }
-.listInfoEntry {
-    cursor: pointer;
-    display: none;
-    padding: 1% 0 1% 2%;
+
+.listInfoEntry{
+  cursor: pointer;
+  padding: 1% 0 1% 2%;
+  background-color: #f2f2f2;
 }
 #liste_resto .listInfoEntry:hover {
     background-color: #F4CA07;
@@ -518,7 +526,7 @@ footer {
     }
     .main-card {
         padding: 0 !important;
-        margin: 30% 0 30% 0 !important;
+        margin: 10% 0 30% 0 !important;
     }
     .card-content {
         padding: 0 5% 0 0 !important;
@@ -599,15 +607,8 @@ footer {
         margin: 0%;
     }
     /**/
-    h1 {
-        background-color: #2e2e2e;
-        font-size: 3.5em !important;
-        font-weight: 600 !important;
-        margin-left: auto;
-        margin-right: auto;
-        width: 600px;
-        text-align: left;
-    }
+
+
     h4 {
         font-size: 4em;
         font-weight: bold;
@@ -616,37 +617,59 @@ footer {
         font-size: 3.5em;
         font-weight: bold;
     }
+    /* .title{
+        background-color: #2e2e2e;
+        font-size: 3.5em !important;
+        font-weight: 600 !important;
+        margin-left: auto;
+        margin-right: auto;
+        width: 600px;
+        text-align: left;
+    } */
+    .title{
+      display: none;
+    }
+    .grp_title{
+      display: flex;
+      align-items:flex-start;
+      justify-content: flex-start;
+      flex-direction: column;
+      margin: 30px auto;
+      width: 50%;
+      margin-top: 10%;
+    }
+    .title_mobile{
+      background-color: #2e2e2e;
+      color: white;
+      font-size: 3.5em !important;
+      font-weight: 600 !important;
+      text-align: left;
+      display: block;
+      margin: 0;
+      padding: 2% 8% 3% 5%;
+    }
     #st_mobile {
         color: white;
         font-size: 3em !important;
         font-weight: 600 !important;
-        position: absolute;
-        top: 9.3%;
-        padding: 1% 0%;
-        padding-right: 4%;
-        padding-left: 4%;
-        transform: translate(-50%, -50%);
+        padding: 2% 7% 3% 5%;
         display: block;
+        margin: 0;
     }
     .st1 {
         background-color: #E6514F;
-        left: 31%;
     }
     .st2 {
         background-color: #F4CA07;
-        left: 43%;
     }
     .st3 {
         background-color: #80CBAD;
-        left: 39.9%;
     }
     .st4 {
         background-color: #C3D2E5;
-        left: 39.2%;
     }
     .st5 {
         background-color: #E6514F;
-        left: 39.3%;
     }
     .btn {
         padding-top: 2%;
@@ -721,9 +744,13 @@ footer {
         max-height: 600px;
     }
     /* Etape 4 */
-    .InfoEntry {
-        margin: 0;
-        margin-left: 2%;
+
+    .btn_showListInfo{
+      margin-bottom: 0;
+    }
+    .InfoEntry{
+      margin: 0;
+      margin-left: 2%;
     }
     .card-etape4 {
         height: auto;
