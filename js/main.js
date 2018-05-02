@@ -134,9 +134,9 @@ function handleTouchMove(evt) {
 
     if (Math.abs(xDiff) > Math.abs(yDiff)) { /*most significant*/
         console.log(xDiff);
-        if (xDiff > 40) {
+        if (xDiff > 10) {
             nextPage('next');
-        } else if (xDiff < -40) {
+        } else if (xDiff < -10) {
             nextPage('prev');
         }
     }

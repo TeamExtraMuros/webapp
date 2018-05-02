@@ -270,6 +270,7 @@ table {
     vertical-align: middle;
     padding: 10%;
     border: 1px solid black;
+    margin: 5%;
 }
 .offline-msg i {
     font-size: 2em;
