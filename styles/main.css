@@ -278,7 +278,6 @@ table {
 
 /* ------ */
 
-
 /* Etape 3 */
 
 .icon-etape3 {
@@ -576,13 +575,13 @@ footer {
         height: 12%;
         text-align: center;
         align-self: center;
-        
-        
+
+
     }
     #nav_mobile p {
         font-weight: normal !important;
     }
-    
+
     #nav_mobile i {
        margin: 5%;
     }
@@ -767,6 +766,10 @@ footer {
     }
     .fa-dollar-sign {
         font-size: 3em !important;
+    }
+    #map{
+      height: 600px;
+      margin-bottom: 5%;
     }
     /* Etape 5 */
     .title-step5 {

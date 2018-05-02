@@ -101,7 +101,7 @@ $(function () {
     $('#nom-pariana').on('click', () => focusMinPointInteret(markerLoisir4, infowindowLoisir4));
     $('#nom-vermont').on('click', () => focusMinPointInteret(markerLoisir5, infowindowLoisir5));
 })
-  
+
 function initMap() {
     var positionUIT = {
         lat: 46.220741,
