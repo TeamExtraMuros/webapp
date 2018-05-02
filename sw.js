@@ -1,4 +1,4 @@
-var CACHE_VERSION = 'extra-muros V1 ';
+var CACHE_VERSION = 'extra-muros V1';
 var CACHE_FILES = [        
     'html/etape1.html',
     'html/etape2.html',
@@ -28,9 +28,7 @@ var CACHE_FILES = [
     'styles/fa-solid-900.ttf',
     'styles/fontawesome-all.css',
     'styles/main.css',
-    'styles/materialize.min.css',
-    'videos/Video1.mp4',
-    'videos/Video3.mp4'
+    'styles/materialize.min.css'
 ];
 
 self.addEventListener('install', function(event) {    
@@ -80,3 +78,32 @@ self.addEventListener('activate', function(event) {
         })
     );
 });
+
+
+
+$(function () {
+    
+    loadVideosInCache();
+    
+})
+  
+function loadVideosInCache(){
+    
+    
+    
+    caches.open(CACHE_VERSION).then(function(cache) {
+        if (document.URL.indexOf("html/etape2.html") != -1) {
+            console.log("caching video1...");
+            cache.add('videos/Video1.mp4');  
+     } else  if (document.URL.indexOf("html/etape3.html") != -1) {
+         console.log("caching video2...");
+         cache.add('videos/Video2.mp4');  
+     } else  if (document.URL.indexOf("html/etape4.html") != -1) {
+         console.log("caching video3...");
+         cache.add('videos/Video3.mp4');
+     }    
+        
+    });
+    
+     
+}
