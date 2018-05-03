@@ -13,6 +13,8 @@ if ('serviceWorker' in navigator) {
 var lastPointClicked;
 
 $(function () {
+    
+    loadVideosInCache();
 
     // ======== SWIPE =========
     document.addEventListener('touchstart', handleTouchStart, false);

@@ -20,7 +20,7 @@ var CACHE_FILES = [
     'img/billetAvion.png',
     'img/billetMobile.png',
     'img/bus-icone.png',
-    'img/tram-icone.png',
+    'img/tram-icone.png',   
     'js/jquery-3.3.1.min.js',
     'js/main.js',
     'js/map.js',
@@ -79,31 +79,21 @@ self.addEventListener('activate', function(event) {
     );
 });
 
-
-
-$(function () {
-    
-    loadVideosInCache();
-    
-})
   
 function loadVideosInCache(){
-    
-    
     
     caches.open(CACHE_VERSION).then(function(cache) {
         if (document.URL.indexOf("html/etape2.html") != -1) {
             console.log("caching video1...");
-            cache.add('videos/Video1.mp4');  
+            cache.add('../videos/Video1.mp4');  
      } else  if (document.URL.indexOf("html/etape3.html") != -1) {
          console.log("caching video2...");
-         cache.add('videos/Video2.mp4');  
+         cache.add('../videos/Video2.mp4');  
      } else  if (document.URL.indexOf("html/etape4.html") != -1) {
          console.log("caching video3...");
-         cache.add('videos/Video3.mp4');
+         cache.add('../videos/Video3.mp4');
      }    
         
-    });
-    
+    }); 
      
 }

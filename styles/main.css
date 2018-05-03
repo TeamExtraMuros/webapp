@@ -241,6 +241,9 @@ p a:hover {
 .custom-red {
     background-color: #E6514F;
 }
+.custom-yellow {
+    background-color: #f4ca07;
+}
 .btn:hover {
     background-color: white;
     font-weight: bold;
@@ -250,6 +253,10 @@ p a:hover {
 }
 .custom-red:hover {
     color: #E6514F !important;
+}
+
+.custom-yellow:hover {
+    color: #f4ca07 !important;
 }
 table {
     margin-top: 2%;
