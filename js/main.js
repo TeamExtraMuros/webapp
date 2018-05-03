@@ -49,13 +49,15 @@ $(function () {
     $(window).trigger('popstate');
 
     // SOUS-MENU LOGIC
-    var infos_resto = info_resto.children;
-    $(infos_resto).hide();
-    $(liste_resto.children).on("click", function (e) {
+    var infos_resto = $("#info_resto").find('div');
+    infos_resto.hide();
+    $("#liste_resto").find('p').on("click", function (e) {
+
         var nom = "#" + this.getAttribute('id') + "-info";
         $(infos_resto).hide();
         $(nom).show();
         $('#map').show();
+      
     });
 
     var infos_service = info_service.children;
