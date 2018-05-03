@@ -1,16 +1,20 @@
-// if ('serviceWorker' in navigator) {
-//    window.addEventListener('load', function () {
-//        navigator.serviceWorker.register('../sw.js').then(function (registration) {
-//            // Registration was successful
-//            console.log('ServiceWorker registration successful with scope: ', registration.scope);
-//        }, function (err) {
-//            // registration failed :(
-//            console.log('ServiceWorker registration failed: ', err);
-//        });
-//    });
-// }
+if ('serviceWorker' in navigator) {
+   window.addEventListener('load', function () {
+       navigator.serviceWorker.register('../sw.js').then(function (registration) {
+           // Registration was successful
+           console.log('ServiceWorker registration successful with scope: ', registration.scope);
+       }, function (err) {
+           // registration failed
+           console.log('ServiceWorker registration failed: ', err);
+       });
+   });
+}
+
+var lastPointClicked;
 
 $(function () {
+    
+    loadVideosInCache();
 
     // ======== SWIPE =========
     document.addEventListener('touchstart', handleTouchStart, false);
@@ -39,15 +43,12 @@ $(function () {
     $(window).on("popstate", function (e) {
         var idPage = location.hash;
         idPage = idPage.substring(1);
-        //window.location = "#" + idPage;
         switchPage(idPage);
-        if ('screen' in window && window.screen.width > 640) {
-            $('.dropdown-button').trigger('open');
-        }
         $('#map').hide();
     });
     $(window).trigger('popstate');
 
+<<<<<<< HEAD
     // SOUS-MENU LOGIC
     var infos_resto = $("#info_resto").find('div');
     infos_resto.hide();
@@ -77,16 +78,20 @@ $(function () {
         $(nom).show();
         $('#map').show();
     });
+=======
+>>>>>>> 5ba4d00f34db27435a55198e4d8d51dceaf529b4
 
-    var infos_loisir = info_loisir.children;
-    $(infos_loisir).hide();
-    $(liste_loisir.children).on("click", function (e) {
-        var nom = "#" + this.getAttribute('id') + "-info";
-        $(infos_loisir).hide();
-        $(nom).show();
-        $('#map').show();
-    });
+    /*$(".btn_showListInfo").on("click", function () {
+      var idListInfo = $(this).attr("data-activates");
+      $("#" + idListInfo).find("p").show();
+    });*/
 
+    $(".listInfoEntry").on("click", function () {
+        lastPointClicked = $(this).attr('id');
+          $(".InfoEntry").hide();
+          $("#" + lastPointClicked + "-info").show();
+          $('#map').show();
+    })
     // ========================
 
 
@@ -99,6 +104,8 @@ $(function () {
             msgToDisplay = "Veuillez utiliser une connexion Internet afin d'afficher la carte. La carte permet d'afficher l'emplacement du Parking des Nations.";
         } else if (document.URL.indexOf("html/etape3.html") != -1) {
             msgToDisplay = "Veuillez utiliser une connexion Internet afin d'afficher la carte. La carte permet d'afficher l'emplacement du bâtiment de l'UIT.";
+        } else if (document.URL.indexOf("html/etape4.html") != -1) {
+            msgToDisplay = "Veuillez utiliser une connexion Internet afin d'afficher la carte. La carte permet d'afficher les différents points d'intérêts autours de l'UIT.";
         }
 
         addErrorMsg(msgToDisplay);
@@ -112,6 +119,8 @@ $(function () {
             msgToDisplay = "Veuillez utiliser une connexion Internet afin d'afficher la carte. La carte permet d'afficher l'emplacement du Parking des Nations.";
         } else if (document.URL.indexOf("html/etape3.html") != -1) {
             msgToDisplay = "Veuillez utiliser une connexion Internet afin d'afficher la carte. La carte permet d'afficher l'emplacement du bâtiment de l'UIT.";
+        } else if (document.URL.indexOf("html/etape4.html") != -1) {
+          msgToDisplay = "Veuillez utiliser une connexion Internet afin d'afficher la carte. La carte permet d'afficher les différents points d'intérêts autours de l'UIT.";
         }
 
         addErrorMsg(msgToDisplay);
@@ -120,15 +129,19 @@ $(function () {
     window.addEventListener('online', function (event) {
 
         // the frame that will be displayed in the box in case online mode is activated.
-        var iframeToDisplay;
+        var elementToDisplay;
+        var mapHasToInit = false;
         if (document.URL.indexOf("html/etape2.html") != -1) {
-            iframeToDisplay = $('<iframe id="map-frame" class="offline_display" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2406.707632241522!2d6.137100769134995!3d46.221209502556746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c64e6b26a148d%3A0x8aab5bf1feca5e49!2sParking+des+Nations%2C+1202+Gen%C3%A8ve!5e0!3m2!1sfr!2sch!4v1524040996776" width="100%" frameborder="0" style="border:0" allowfullscreen=""></iframe>');
+            elementToDisplay = $('<iframe id="map-frame" class="offline_display" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2406.707632241522!2d6.137100769134995!3d46.221209502556746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c64e6b26a148d%3A0x8aab5bf1feca5e49!2sParking+des+Nations%2C+1202+Gen%C3%A8ve!5e0!3m2!1sfr!2sch!4v1524040996776" width="100%" frameborder="0" style="border:0" allowfullscreen=""></iframe>');
 
         } else if (document.URL.indexOf("html/etape3.html") != -1) {
-            iframeToDisplay = $('<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1226.7186208603707!2d6.136702027268748!3d46.219878443866406!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7d37e7fb458fe110!2sUnion+Internationale+des+T%C3%A9l%C3%A9communications+(UIT)!5e0!3m2!1sfr!2sch!4v1524473821354" class="map-etape3 offline_display" frameborder="0" allowfullscreen></iframe>');
+            elementToDisplay = $('<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1226.7186208603707!2d6.136702027268748!3d46.219878443866406!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7d37e7fb458fe110!2sUnion+Internationale+des+T%C3%A9l%C3%A9communications+(UIT)!5e0!3m2!1sfr!2sch!4v1524473821354" class="map-etape3 offline_display" frameborder="0" allowfullscreen></iframe>');
+        } else if (document.URL.indexOf("html/etape4.html") != -1) {
+             mapHasToInit = true;
+            elementToDisplay = $('<div id="map"></div>');
         }
 
-        addMap(iframeToDisplay);
+        addMap(elementToDisplay, mapHasToInit);
     });
 
 
@@ -155,9 +168,9 @@ function handleTouchMove(evt) {
 
     if (Math.abs(xDiff) > Math.abs(yDiff)) { /*most significant*/
         console.log(xDiff);
-        if (xDiff > 40) {
+        if (xDiff > 10) {
             nextPage('next');
-        } else if (xDiff < -40) {
+        } else if (xDiff < -10) {
             nextPage('prev');
         }
     }
@@ -196,14 +209,20 @@ function addErrorMsg(msg) {
     $('<div class="offline-msg"><i class="fas fa-exclamation-triangle"></i><br/><br/><p>' + msg + '</p></div>').appendTo(container);
 }
 
-function addMap(iframe) {
+function addMap(element, mapHasToInit) {
+
 
     // get the parent container of the message displayed in order to display the iframe again if the connection is re-established.
     var container = $(".offline-msg").parent();
     $(".offline-msg").remove();
 
     // display GoogleMaps iframe
-    iframe.appendTo(container);
+    element.appendTo(container);
+
+    if(mapHasToInit){
+      initMap();
+      $('#'+lastPointClicked).trigger('click');
+    }
 }
 
 // ========================

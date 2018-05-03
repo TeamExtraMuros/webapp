@@ -15,39 +15,42 @@
 
 <header>
     <h1 class="title">Votre séjour à l'UIT</h1>
-    <h2 id="st_mobile" class="st4">Autour de l'UIT</h2>
+    <div class="grp_title">
+      <h1 class="title_mobile">Votre séjour à l'UIT</h1>
+      <h2 id="st_mobile" class="st4">Points d'intérêts</h2>
+    </div>
     <div class="grid-container" id="nav_desktop">
         <div class="grid-item">
             <a href="./etape1.html">
-                <i class="fas fa-map-marker"></i>
+                <i class="fas fa-map-marker custom-icon"></i>
                 <p>Lieu</p>
             </a>
         </div>
         <i class="fas fa-angle-right next"></i>
         <div class="grid-item">
             <a href="./etape2.html">
-                <i class="fas fa-plane"></i>
+                <i class="fas fa-plane custom-icon"></i>
                 <p>Transports</p>
             </a>
         </div>
         <i class="fas fa-angle-right next"></i>
         <div class="grid-item">
             <a href="./etape3.html">
-                <i class="fas fa-suitcase"></i>
+                <i class="fas fa-suitcase custom-icon"></i>
                 <p>UIT</p>
             </a>
         </div>
         <i class="fas fa-angle-right next"></i>
         <div class="grid-item">
             <a href="#" class="selected">
-                <i class="fas fa-utensils"></i>
+                <i class="fas fa-utensils custom-icon"></i>
                 <p>Activités</p>
             </a>
         </div>
         <i class="fas fa-angle-right next"></i>
         <div class="grid-item">
             <a href="./etape5.html">
-                <i class="fas fa-user"></i>
+                <i class="fas fa-user custom-icon"></i>
                 <p>Informations</p>
             </a>
         </div>
@@ -62,7 +65,7 @@
         <div class="card-content toRight card-etape4">
             <div class="row">
                 <div class="col s12 l7 player col-no-padding-left">
-                    <video class="responsive-video" controls>
+                    <video class="responsive-video" poster="../img/thumbnail/Video3_thumbnail.jpg" controls>
                         <source src="../videos/Video3.mp4" type="video/mp4">
                     </video>
                 </div>
@@ -74,38 +77,36 @@
                     <a data-time=77 class="waves-effect waves-light btn custom-red"><i class="fas fa-forward"></i>Loisirs</a>
                 </div>
             </div>
-            <div class="row withMargin">
+            <div class="row withMargin sous_menu">
+                <h4>Listes des points d'intérêts</h4>
                 <div class="col l3 s12">
-                    <a href="#restaurant" class="btn btn-resto" id="restaurant">Restaurants</a>
+                    <a href="#restaurant" class="btn btn-resto btn_poi" id="restaurant">Restaurants</a>
                 </div>
                 <div class="col l3 s12">
-                    <a href="#service" class="btn btn-service" id="service">Services</a>
+                    <a href="#service" class="btn btn-service btn_poi" id="service">Services</a>
                 </div>
                 <div class="col l3 s12">
-                    <a href="#magasins" class="btn btn-magasin" id="magasin">Magasins</a>
+                    <a href="#magasins" class="btn btn-magasin btn_poi" id="magasin">Magasins</a>
                 </div>
                 <div class="col l3 s12">
-                    <a href="#loisirs" class="btn btn-loisirs" id="loisirs">Loisirs</a>
+                    <a href="#loisirs" class="btn btn-loisirs btn_poi" id="loisirs">Loisirs</a>
                 </div>
             </div>
 
             <div class="row page" id="page_restaurant">
-                <div class="col l4 s12" id="sous_menu">
-                    <ul id="liste_resto" class="dropdown dropdown-content">
-                        <p id="nom-tivoli">Brasserie Tivoli</p>
-                        <p id="nom-colombe">Colombe</p>
-                        <p id="nom-homard">Homard Bleu</p>
-                        <p id="nom-ariana">Pizzeria Ariana</p>
-                        <p id="nom-romana">Romana</p>
-                        <p id="nom-sagano">Sagano</p>
-                        <p id="nom-thai">Thai Phuket</p>
-                        <p id="nom-nation">Table des Nations</p>
-                    </ul>
-
-                    <a class="btn dropdown-button btn-dropdown-1" id="dropdown1" href="#" data-activates="liste_resto" data-constrainWidth="false">Liste des restaurants</a>
+                <div class="col l4 s12" id="liste_resto">
+                    <span class="btn btn_showListInfo" id="dropdown1"><i class="fas fa-arrow-alt-circle-down"></i> Liste des restaurants</span>
+                    <p class="listInfoEntry" id="nom-tivoli">Brasserie Tivoli</p>
+                    <p class="listInfoEntry"  id="nom-colombe">Colombe</p>
+                    <p class="listInfoEntry" id="nom-homard">Homard Bleu</p>
+                    <p class="listInfoEntry"  id="nom-ariana">Pizzeria Ariana</p>
+                    <p class="listInfoEntry" id="nom-romana">Romana</p>
+                    <p class="listInfoEntry" id="nom-sagano">Sagano</p>
+                    <p class="listInfoEntry" id="nom-thai">Thai Phuket</p>
+                    <p class="listInfoEntry" id="nom-nation">Table des Nations</p>
                 </div>
                 <div class="col l8 s12" id="info_resto">
-                    <div id="nom-thai-info">
+                    <div class="InfoEntry" id="nom-thai-info">
                         <p><strong>Thai Phuket</strong> - Thaïlandais</p>
                         <p>Avenue de France 33</p>
                         <p>022 734 41 00</p>
@@ -123,7 +124,7 @@
                         <br>
                     </div>
 
-                    <div id="nom-romana-info">
+                    <div  class="InfoEntry"  id="nom-romana-info">
                         <p><strong>Romana</strong> - Italien</p>
                         <p>Rue de Vermont 37</p>
                         <p>022 734 82 86</p>
@@ -141,7 +142,7 @@
                         <br>
                     </div>
 
-                    <div id="nom-ariana-info">
+                    <div  class="InfoEntry"  id="nom-ariana-info">
                         <p><strong>Pizzeria Ariana</strong> - Italien</p>
                         <p>Rue de Montbrillant 83</p>
                         <p>022 418 54 50</p>
@@ -159,7 +160,7 @@
                         <br>
                     </div>
 
-                    <div id="nom-tivoli-info">
+                    <div class="InfoEntry"  id="nom-tivoli-info">
                         <p><strong>Brasserie Tivoli</strong> - Suisse</p>
                         <p>Rue de Montbrillant 87</p>
                         <p>022 734 35 45</p>
@@ -176,7 +177,7 @@
                         <br>
                     </div>
 
-                    <div id="nom-homard-info">
+                    <div  class="InfoEntry"  id="nom-homard-info">
                         <p><strong>Homard bleu</strong> - Méditerranéen</p>
                         <p>Chemin Louis-Dunant 13</p>
                         <p>022 733 56 05</p>
@@ -194,7 +195,7 @@
                         <br>
                     </div>
 
-                    <div id="nom-nation-info">
+                    <div  class="InfoEntry"  id="nom-nation-info">
                         <p><strong>Table des nations</strong> - Chinois</p>
                         <p>Avenue Giuseppe-Motta 30</p>
                         <p>022 734 56 27</p>
@@ -212,7 +213,7 @@
                         <br>
                     </div>
 
-                    <div id="nom-sagano-info">
+                    <div class="InfoEntry"  id="nom-sagano-info">
                         <p><strong>Sagano</strong> - Japonais</p>
                         <p>Rue de Montbrillant 86</p>
                         <p>022 733 11 50</p>
@@ -230,7 +231,7 @@
                         <br>
                     </div>
 
-                    <div id="nom-colombe-info">
+                    <div class="InfoEntry"  id="nom-colombe-info">
                         <p><strong>Colombe</strong> - Populaire</p>
                         <p>Chemin des Colombettes 11</p>
                         <p>022 734 58 00</p>
@@ -250,22 +251,17 @@
                 </div>
             </div>
 
-
             <div class="row page" id="page_service">
-
-                <div class="col l4" id="sous_menu">
-                    <ul id="liste_service" class="dropdown2 dropdown-content">
-                        <p id="nom-pharmacie">Pharmacie</p>
-                        <p id="nom-poste1">Poste CICG</p>
-                        <p id="nom-poste2">Poste Montbrillant</p>
-                        <p id="nom-ubs">UBS</p>
-                    </ul>
-
-                    <a class="btn dropdown-button btn-dropdown-2" id="dropdown2" href="#" data-activates="liste_service" data-constrainWidth="false">Liste des services</a>
+                <div class="col l4 s12" id="liste_service">
+                      <span class="btn dropdown-button btn-dropdown-1 btn_showListInfo" id="dropdown2" data-activates="liste_service"><i class="fas fa-arrow-alt-circle-down"></i> Liste des services</span>
+                      <p class="listInfoEntry" id="nom-pharmacie">Pharmacie</p>
+                      <p class="listInfoEntry" id="nom-poste1">Poste CICG</p>
+                      <p class="listInfoEntry" id="nom-poste2">Poste Montbrillant</p>
+                      <p class="listInfoEntry" id="nom-ubs">UBS</p>
                 </div>
 
-                <div class="col l8" id="info_service">
-                    <div id="nom-ubs-info">
+                <div class="col l8 s12" id="info_service">
+                    <div class="InfoEntry" id="nom-ubs-info">
                         <p><strong>UBS</strong></p>
                         <p>Chemin Louis-Dunant 17</p>
                         <br>
@@ -278,7 +274,7 @@
                         <p><i class="fas fa-map-pin"></i> 130m de l'UIT</p>
                     </div>
 
-                    <div id="nom-poste1-info">
+                    <div class="InfoEntry" id="nom-poste1-info">
                         <p><strong>Poste du CICG</strong></p>
                         <p>15 rue de Varembé</p>
                         <br>
@@ -292,7 +288,7 @@
                         <p><i class="fas fa-map-pin"></i> 450m de l'UIT</p>
                     </div>
 
-                    <div id="nom-poste2-info">
+                    <div class="InfoEntry" id="nom-poste2-info">
                         <p><strong>Poste de Montbrillant</strong></p>
                         <p>16 rue des Gares</p>
                         <br>
@@ -308,7 +304,7 @@
                         <p><i class="fas fa-map-pin"></i> 450m de l'UIT</p>
                     </div>
 
-                    <div id="nom-pharmacie-info">
+                    <div class="InfoEntry" id="nom-pharmacie-info">
                         <p><strong>Pharmacie Populaire Nations</strong></p>
                         <p>Rue de Montbrillant 67</p>
                         <br>
@@ -319,22 +315,16 @@
                 </div>
             </div>
 
-
             <div class="row page" id="page_magasins">
-
-                <div class="col l4" id="sous_menu">
-                    <ul id="liste_magasin" class="dropdown3 dropdown-content">
-                        <p id="nom-balexert">Balexert</p>
-                        <p id="nom-coop">Coop</p>
-                        <p id="nom-denner">Denner</p>
-                        <p id="nom-migros">Migros</p>
-                    </ul>
-
-                    <a class="btn dropdown-button btn-dropdown-3" id="dropdown3" href="#" data-activates="liste_magasin" data-constrainWidth="false">Liste des magasins</a>
+                <div class="col l4 s12" id="liste_magasin">
+                      <span class="btn dropdown-button btn-dropdown-3 btn_showListInfo" id="dropdown3" data-activates="liste_magasin"><i class="fas fa-arrow-alt-circle-down"></i> Liste des magasins</span>
+                      <p class="listInfoEntry" id="nom-balexert">Balexert</p>
+                      <p class="listInfoEntry" id="nom-coop">Coop</p>
+                      <p class="listInfoEntry" id="nom-denner">Denner</p>
+                      <p class="listInfoEntry" id="nom-migros">Migros</p>
                 </div>
-
-                <div class="col l8" id="info_magasin">
-                    <div id="nom-coop-info">
+                <div class="col l8 s12" id="info_magasin">
+                    <div class="InfoEntry" id="nom-coop-info">
                         <p><strong>Coop</strong></p>
                         <p>Rue de Montbrillant 90</p>
                         <br>
@@ -350,7 +340,7 @@
                         <p><i class="fas fa-map-pin"></i> 550m de l'UIT</p>
                     </div>
 
-                    <div id="nom-migros-info">
+                    <div class="InfoEntry" id="nom-migros-info">
                         <p><strong>Migros</strong></p>
                         <p>Rue du Vidollet 5</p>
                         <br>
@@ -366,7 +356,7 @@
                         <p><i class="fas fa-map-pin"></i> 800m de l'UIT</p>
                     </div>
 
-                    <div id="nom-denner-info">
+                    <div class="InfoEntry" id="nom-denner-info">
                         <p><strong>Denner</strong></p>
                         <p>Rue de Montbrillant 67</p>
                         <br>
@@ -382,7 +372,7 @@
                         <p><i class="fas fa-map-pin"></i> 500m de l'UIT</p>
                     </div>
 
-                    <div id="nom-balexert-info">
+                    <div class="InfoEntry" id="nom-balexert-info">
                         <p><strong>Balexert</strong></p>
                         <p>Avenue Louis-Casai 27</p>
                         <br>
@@ -401,23 +391,19 @@
 
             </div>
 
-
             <div class="row page" id="page_loisirs">
-                <div class="col l4" id="sous_menu">
-                    <ul id="liste_loisir" class="dropdown4 dropdown-content">
-                        <p id="nom-yoga">Centre de Yoga</p>
-                        <p id="nom-fitness">Let's Go Fitness</p>
-                        <p id="nom-pariana">Parc Ariana</p>
-                        <p id="nom-vermont">Parc Vermont</p>
-                        <p id="nom-varembe">Piscine Varembé</p>
-                    </ul>
-
-                    <a class="btn dropdown-button btn-dropdown-4" id="dropdown4" href="#" data-activates="liste_loisir" data-constrainWidth="false">Liste des loisirs</a>
+                <div class="col l4 s12" id="liste_loisir">
+                      <span class="btn dropdown-button btn-dropdown-1 btn_showListInfo" id="dropdown4" data-activates="liste_loisir"><i class="fas fa-arrow-alt-circle-down"></i> Liste des loisirs</span>
+                      <p class="listInfoEntry" id="nom-yoga">Centre de Yoga</p>
+                      <p class="listInfoEntry" id="nom-fitness">Let's Go Fitness</p>
+                      <p class="listInfoEntry" id="nom-pariana">Parc Ariana</p>
+                      <p class="listInfoEntry" id="nom-vermont">Parc Vermont</p>
+                      <p class="listInfoEntry" id="nom-varembe">Piscine Varembé</p>
                 </div>
 
 
-                <div class="col l8" id="info_loisir">
-                    <div id="nom-varembe-info">
+                <div class="col l8 s12" id="info_loisir">
+                    <div class="InfoEntry" id="nom-varembe-info">
                         <p><strong>Piscine Varembé</strong></p>
                         <p>Avenue Giuseppe Motta 46</p>
                         <p>022 418 93 00</p>
@@ -426,7 +412,7 @@
                         <br>
                         <p><i class="fas fa-map-pin"></i> 220m de l'UIT</p>
                     </div>
-                    <div id="nom-yoga-info">
+                    <div class="InfoEntry" id="nom-yoga-info">
                         <p><strong>Centre de Yoga</strong></p>
                         <p>Chemin des Colombettes 6</p>
                         <br>
@@ -436,7 +422,7 @@
                         <a href="https://colife.ch/" target=_blank><i class="fas fa-info-circle"></i> Plus d'infos</a>
                         <br>
                     </div>
-                    <div id="nom-fitness-info">
+                    <div class="InfoEntry" id="nom-fitness-info">
                         <p><strong>Let's Go Fitness</strong></p>
                         <p>Chemin de La Voie-Creuse 16</p>
                         <p>022 733 43 23</p>
@@ -445,13 +431,13 @@
                         <br>
                         <p><i class="fas fa-map-pin"></i> 650m de l'UIT</p>
                     </div>
-                    <div id="nom-pariana-info">
+                    <div class="InfoEntry" id="nom-pariana-info">
                         <p><strong>Parc de l'Ariana</strong></p>
                         <p>Le parc de l’Ariana accueille le Musée suisse de la céramique et du verre.</p>
                         <br>
                         <p><i class="fas fa-map-pin"></i> 850m de l'UIT</p>
                     </div>
-                    <div id="nom-vermont-info">
+                    <div class="InfoEntry" id="nom-vermont-info">
                         <p><strong>Parc de Vermont</strong></p>
                         <p>Ce parc offre un véritable biotope dans le quartier de Servette Petit-Saconnex, aux environs de Montbrillant. Une place de jeux pour enfants et des engins de fitness en plein air y sont proposés au public.</p>
                         <br>
@@ -459,7 +445,8 @@
                     </div>
                 </div>
             </div>
-        <div id="map" class="hideOnMobile"></div>
+
+        <div id="map" class="offline_display"></div>
       </div>
   </div>
     </div>
@@ -491,21 +478,19 @@
         <div class="grid-item">
             <a href="./etape5.html" class="o5">
                 <i class="fas fa-user fa-2x"></i>
-                <p>Informations</p>
+                <p>Infos</p>
             </a>
         </div>
     </div>
     <script src="../js/jquery-3.3.1.min.js">
 
-
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUjXqRh24Zx1dIIcesxv0IPjcL7All0L0&callback=initMap"></script>
     <script src="../js/map.js"></script>
     <script src="../js/main.js"></script>
     <script src="../sw.js"></script>
     <script src="../manup.js"></script>
 </body>
-<footer><i class="fas fa-copyright"></i> Team Extra Murros - HEIG-VD - 2018</footer>
+<footer><i class="fas fa-copyright"></i> Team Extra Muros - HEIG-VD - 2018</footer>
 
 </html>
