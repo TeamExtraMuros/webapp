@@ -78,30 +78,6 @@ var contentStringLoisir3 = '<div class="infoWindowLoisir">Let\'s Go Fitness</div
 var contentStringLoisir4 = '<div class="infoWindowLoisir">Parc de l\'Ariana</div>';
 var contentStringLoisir5 = '<div class="infoWindowLoisir">Parc de Vermont</div>';
 
-$(function () {
-    $('#nom-ubs').on('click', () => focusMediumPointInteret(markerService1, infowindowService1));
-    $('#nom-poste1').on('click', () => focusMaxPointInteret(markerService2, infowindowService2));
-    $('#nom-poste2').on('click', () => focusMediumPointInteret(markerService3, infowindowService3));
-    $('#nom-pharmacie').on('click', () => focusMaxPointInteret(markerService4, infowindowService4));
-    $('#nom-coop').on('click', () => focusMediumPointInteret(markerMagasin1, infowindowMagasin1));
-    $('#nom-migros').on('click', () => focusMediumPointInteret(markerMagasin2, infowindowMagasin2));
-    $('#nom-denner').on('click', () => focusMaxPointInteret(markerMagasin3, infowindowMagasin3));
-    $('#nom-balexert').on('click', () => focusMediumPointInteret(markerMagasin4, infowindowMagasin4));
-    $('#nom-thai').on('click', () => focusMaxPointInteret(markerRestaurant1, infowindowRestaurant1));
-    $('#nom-romana').on('click', () => focusMaxPointInteretIcon(markerRestaurant2, infowindowRestaurant2));
-    $('#nom-ariana').on('click', () => focusMaxPointInteret(markerRestaurant3, infowindowRestaurant3));
-    $('#nom-tivoli').on('click', () => focusMaxPointInteret(markerRestaurant4, infowindowRestaurant4));
-    $('#nom-homard').on('click', () => focusMaxPointInteret(markerRestaurant5, infowindowRestaurant5));
-    $('#nom-nation').on('click', () => focusMaxPointInteret(markerRestaurant6, infowindowRestaurant6));
-    $('#nom-sagano').on('click', () => focusMaxPointInteret(markerRestaurant7, infowindowRestaurant7));
-    $('#nom-colombe').on('click', () => focusMaxPointInteret(markerRestaurant8, infowindowRestaurant8));
-    $('#nom-varembe').on('click', () => focusMediumPointInteret(markerLoisir1, infowindowLoisir1));
-    $('#nom-yoga').on('click', () => focusMaxPointInteret(markerLoisir2, infowindowLoisir2));
-    $('#nom-fitness').on('click', () => focusMaxPointInteretIcon(markerLoisir3, infowindowLoisir3));
-    $('#nom-pariana').on('click', () => focusMinPointInteret(markerLoisir4, infowindowLoisir4));
-    $('#nom-vermont').on('click', () => focusMinPointInteret(markerLoisir5, infowindowLoisir5));
-})
-
 function initMap() {
     var positionUIT = {
         lat: 46.220741,
@@ -440,6 +416,7 @@ function initMap() {
 
 //zoom to show infowindow from medium marker
 function focusMediumPointInteret(marker, infoWindow) {
+
     if (activeInfoWindows) {
         activeInfoWindows.close();
     }
@@ -448,10 +425,12 @@ function focusMediumPointInteret(marker, infoWindow) {
     infoWindow.open(map, marker);
     activeInfoWindows = infoWindow;
     marker.setVisible(false);
+
 }
 
 //zoom to show infowindow from big marker
 function focusMinPointInteret(marker, infoWindow) {
+
     if (activeInfoWindows) {
         activeInfoWindows.close();
     }
@@ -460,22 +439,12 @@ function focusMinPointInteret(marker, infoWindow) {
     infoWindow.open(map, marker);
     activeInfoWindows = infoWindow;
     marker.setVisible(false);
+
 }
 
 //zoom to show marker and infowindow when not present on map
 function focusMaxPointInteretIcon(marker, infoWindow) {
-    if (activeInfoWindows) {
-        activeInfoWindows.close();
-    }
-    map.setZoom(19);
-    map.setCenter(marker.getPosition());
-    infoWindow.open(map, marker);
-    activeInfoWindows = infoWindow;
-    //marker.setVisible(false);
-}
 
-//zoom to show infowindow from little marker
-function focusMaxPointInteret(marker, infoWindow) {
     if (activeInfoWindows) {
         activeInfoWindows.close();
     }
@@ -484,6 +453,21 @@ function focusMaxPointInteret(marker, infoWindow) {
     infoWindow.open(map, marker);
     activeInfoWindows = infoWindow;
     marker.setVisible(false);
+
+}
+
+//zoom to show infowindow from little marker
+function focusMaxPointInteret(marker, infoWindow) {
+
+    if (activeInfoWindows) {
+        activeInfoWindows.close();
+    }
+    map.setZoom(19);
+    map.setCenter(marker.getPosition());
+    infoWindow.open(map, marker);
+    activeInfoWindows = infoWindow;
+    marker.setVisible(false);
+
 }
 //set uit infowindow
 function setUIT(marker, infoWindow) {

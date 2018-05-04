@@ -28,7 +28,11 @@ var CACHE_FILES = [
     'styles/fa-solid-900.ttf',
     'styles/fontawesome-all.css',
     'styles/main.css',
-    'styles/materialize.min.css'
+    'styles/materialize.min.css',
+    'sw.js',
+    'manup.js',
+    'manifest.json',
+    'index.php'
 ];
 
 self.addEventListener('install', function(event) {    
